@@ -8,12 +8,12 @@ export default class header extends Component {
 			<div className="header container">
 				<div className="row">
 					<Link to="/">
-						<img src={logo} className="header__logo" alt="logo" />
+						<img src={logo} className="header__logo col-xs-1" alt="logo" />
 					</Link>
 				</div>
-				<div id="site-menu" class="site-menu">
-					<div class="site-menu__wrapper">
-						<nav class="site-menu__navigation">
+				<div id="site-menu" className="site-menu">
+					<div className="site-menu__wrapper">
+						<nav className="site-menu__navigation">
 							<ul>
 								<li><Link to="/">Home</Link></li>
 								<li><Link to="/">Work</Link></li>
@@ -21,9 +21,9 @@ export default class header extends Component {
 							</ul>
 						</nav>
 					</div>
-					<div class="site-menu__control">
-						<div class="site-menu__menu-button">
-							<div class="hamburger"></div>
+					<div className="site-menu__control">
+						<div className="site-menu__menu-button">
+							<div className="hamburger"></div>
 						</div>
 					</div>
 				</div>

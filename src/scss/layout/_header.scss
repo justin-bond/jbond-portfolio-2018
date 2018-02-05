@@ -8,21 +8,21 @@ body {
 	margin-top: 80px;
 }
 .header__logo {
-	width: 80px;
+	// width: 80px;
 }
 .site-menu {
-	position: relative;
+	// position: relative;
 	overflow: hidden;
 	color: #fff;
 	@include media($tablet-up) {
 		z-index: 1000;
 		position: fixed;
-		top: 93px;
+		top: 75px;
 		right: 0;
 		width: 100%;
 		max-width: 330px;
-		height: 150px;
-		transition: opacity .3s .3s,max-width .3s;
+		// height: 150px;
+		// transition: opacity .3s .3s,max-width .3s;
 	}
 }
 .site-menu__wrapper {
@@ -40,62 +40,55 @@ body {
 	}
 }
 .site-menu__navigation {
-	opacity: 0;
-	visibility: hidden;
+	// opacity: 0;
+	// visibility: hidden;
 	// position: absolute;
 	// top: calc(50% - 20px);
 	// left: 50%;
 	// transform: translate(-50%,-50%);
-	overflow: hidden;
-	transition: opacity .3s;
+	// overflow: hidden;
+	// transition: opacity .3s;
 	@include media($tablet-up) {
-		opacity: 1;
-		background: transparent;
-		visibility: visible;
-		position: relative;
-		top: auto;
-		left: auto;
-		transform: none;
-		overflow: hidden;
-		height: 100%;
+		// opacity: 1;
+		// background: transparent;
+		// visibility: visible;
+		// position: relative;
+		// top: auto;
+		// left: auto;
+		// transform: none;
+		// overflow: hidden;
+		// height: 100%;
 	}
 	ul {
-		z-index: 1001;
-		position: relative;
-		list-style: none;
-		text-align: center;
+		// z-index: 1001;
+		// position: relative;
+		// list-style: none;
+		// text-align: center;
 		@include media($tablet-up) {
-			height: 100%;
-			// margin: 0 50px;
+			// height: 100%;
+			// // margin: 0 50px;
 			display: flex;
-			align-content: center;
-			align-items: center;
-			justify-content: flex-start;
+			// align-content: center;
+			// align-items: center;
+			// justify-content: flex-start;
 		}
 	}
 	li {
-		opacity: 0;
 		display: block;
-		text-align: center;
-		margin-bottom: 30px;
-		transition: opacity .2s;
 		@include media($tablet-up) {
-			flex: 0 0 auto;
-			margin: 0 38px;
+			margin-right: 75px;
 			display: inline-block;
-			transition-delay: 0ms!important;
-			opacity: 1;
+			&:last-child {
+				margin-right: 0;
+			}
 		}
 		a {
-			white-space: nowrap;
 			display: inline-block;
-			color: inherit;
 			border-bottom: 2px solid transparent;
-			font-weight: 600;
 			transition: border-bottom .3s;
 			@include media($tablet-up) {
-				transition: color .3s;
 				color: #fff;
+				line-height: 55px;
 				&:hover {
 					border-bottom: 2px solid #fff;
 				}
