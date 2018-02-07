@@ -20,3 +20,46 @@
 .home-recent {
 
 }
+.home-recent__text {
+	margin-bottom: 60px;
+}
+.home-recent__top {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 36px;
+
+}
+.home-recent__work {
+	margin-bottom: 37px;
+    &:hover {
+    	// transition: all 0.5s ease-in-out;
+    	background-color: rgba(0,0,0, 0.5);
+    	box-shadow: 3px 3px 13px 0px rgba(0,0,0,0.75);
+    	.recent__work--loaded {
+    		display: none;
+    	}
+    	.recent__work--hover {
+			display: grid;
+    	}
+    }
+}
+.recent__work--loaded,
+.recent__work--hover {
+	height: 300px;
+	display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.recent__work--loaded {
+	transition: all 0.5s ease-in-out;
+}
+.recent__work--hover {
+	display: none;
+	transition: all 0.5s ease-in-out;
+	background-position: center center;
+	background-size: cover;
+	box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.7);
+	font-size: 3em;
+	color: #fff;
+}
