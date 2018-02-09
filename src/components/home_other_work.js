@@ -10,7 +10,7 @@ export default class home_other_work extends Component {
 		const work = this.props.projects[key];
 		if (work) {
 			return (
-				<li key={key}>{ work['companyName'] }</li>
+				<li key={key}><Link to="" className="code-color-blue">{ work['companyName'] } <span>,</span></Link></li>
 			)
 		}
 	}
@@ -22,7 +22,15 @@ export default class home_other_work extends Component {
 					<span className="code-color-blue">{bullet}</span>Other Work
 				</div>
 				<div className="home-other__work--list">
-					{this.props.otherWork.map(this.renderOtherWork)}
+					<div className="container">
+						<div className="row">
+							<div className="col-md-8 col-md-push-1">
+								<ul>
+									{this.props.otherWork.map(this.renderOtherWork)}
+								</ul>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		);

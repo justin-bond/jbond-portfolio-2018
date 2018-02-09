@@ -65,7 +65,36 @@
 }
 .home-other__text {
 	font-family: $share-tech-mono;
+	margin-bottom: 57px;
 	span {
 		margin-right: 18px;
 	}
+}
+.home-other__work--list {
+	font-family: $share-tech-mono;
+	ul {
+		list-style-type: none;
+		display: flex;
+ 		flex-flow: wrap column;
+    	max-height: 215px; 
+    	// column-count: 3;
+	    // column-gap: 20px;
+	}
+	li {
+		position: relative;
+		display: inline-block;
+		padding-left: 17px;
+		margin-bottom: 22px;
+		&:before {
+			content: '},';
+			position: absolute;
+			left: -5px;
+			color: #fff;
+		}
+		span {
+			color: #fff;
+		}
+	}
+	// column-count: 3;
+ //    column-gap: 20px;
 }

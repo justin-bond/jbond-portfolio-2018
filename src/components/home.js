@@ -102,12 +102,12 @@ export default class home extends Component {
 		return (
 			<div className="homepage container">
 				<div className="row">
-					<div className="col-md-9 col-md-push-1">
+					<div className="col-md-10 col-md-push-1">
 						<HomeIntro />
 					</div>
 				</div>
 				<div className="row">
-					<div className="col-md-9 col-md-push-1">
+					<div className="col-md-10 col-md-push-1">
 						<HomeRecentWork
 							projects={this.state.projects}
 							recentWork={this.state.recentWork}
@@ -115,7 +115,7 @@ export default class home extends Component {
 					</div>
 				</div>
 				<div className="row">
-					<div className="col-md-9 col-md-push-1">
+					<div className="col-md-10 col-md-push-1">
 						<HomeOtherWork
 							projects={this.state.projects}
 							otherWork={this.state.otherWork}
