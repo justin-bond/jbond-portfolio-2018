@@ -4,6 +4,11 @@
 .code-color-blue, .code-color-blue:hover, .code-color-blue:active, .code-color-blue:focus {
 	color: $code-blue;
 }
+.clearfix {
+	content: "";
+	display: table;
+	clear: both;
+}
 .hide--mobile{
 	display:none;
 	@include media($mobile-up){

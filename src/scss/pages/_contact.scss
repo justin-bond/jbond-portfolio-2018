@@ -1,0 +1,17 @@
+.contact--container {
+	display: grid;
+	grid-template-columns: 2.5fr 1fr;
+	margin-bottom: 100px;
+	box-shadow: 3px 3px 13px 0px rgba(0,0,0,0.75);
+}
+.contact--form {
+	background-color: #212121;
+	padding: 61px 123px 115px;
+}
+.contact--social {
+	background-color: #070707;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
