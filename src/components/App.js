@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-import Header from './header.js';
-import Home from './home.js';
+import Header from './header';
+import Footer from './footer';
+import Home from './home';
 import NoMatch from './no_match';
 
 class App extends Component {
@@ -19,6 +20,7 @@ class App extends Component {
 								render={()=><Home />} />
 							<Route component={NoMatch}/>
 						</Switch>
+						<Footer />
 					</div>
 				</div>
 			</Router>
