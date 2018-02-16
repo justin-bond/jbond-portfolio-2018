@@ -1,3 +1,15 @@
 /* ==========================================================================
    Buttons
    ========================================================================== */
+.btn--primary {
+	border: solid 1px #fff;
+	border-radius: 3px;
+	background-color: transparent;
+	font-size: 14px;
+	padding: 12px 26px;
+	transition: all 0.2s ease-in-out;
+	&:hover {
+		background-color: #fff;
+		color: #262626;
+	}
+}

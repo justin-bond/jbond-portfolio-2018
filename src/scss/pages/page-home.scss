@@ -78,9 +78,7 @@
 		list-style-type: none;
 		display: flex;
  		flex-flow: wrap column;
-    	max-height: 215px; 
-    	// column-count: 3;
-	    // column-gap: 20px;
+    	max-height: 215px;
 	}
 	li {
 		position: relative;
@@ -92,7 +90,8 @@
 			position: absolute;
 			left: -5px;
 		}
+		span {
+			color: #fff;
+		}
 	}
-	// column-count: 3;
- //    column-gap: 20px;
 }

@@ -4,9 +4,45 @@
 	margin-bottom: 100px;
 	box-shadow: 3px 3px 13px 0px rgba(0,0,0,0.75);
 }
-.contact--form {
+.contact--form__container {
 	background-color: #212121;
 	padding: 61px 123px 115px;
+}
+.contact--form__title {
+	font-size: 24px;
+	margin-bottom: 60px;
+}
+.contact--form {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 120px;
+	grid-row-gap: 60px;
+	> div {
+		min-height: 85px;
+	}
+	label {
+		color: #999999;
+		font-size: 14px;
+		margin-bottom: 20px;
+	}
+	input[type="text"] {
+		background-color: transparent;
+		border-radius: 0;
+		border: none;
+		border-bottom: solid 0.5px #999999;
+		box-shadow: none;
+		padding: 0;
+		transition: all 0.2s ease-in-out;
+		&:focus, &.has-text {
+			padding: 0 0 10px;
+		}
+	}
+	input[type="submit"] {
+		@extend .btn--primary;
+	}
+}
+.contact--form__message, .contact--form__submit {
+	grid-column: 1 / span 2;
 }
 .contact--social {
 	background-color: #070707;
