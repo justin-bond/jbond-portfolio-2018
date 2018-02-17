@@ -11,15 +11,9 @@ export default class header extends Component {
 		}
 	}
 	handleClick() {
-		if (!this.state.menuActive) {
-			this.setState({
-				menuActive: true
-			});
-		} else {
-			this.setState({
-				menuActive: false
-			});
-		}
+		this.setState({
+			menuActive: !this.state.menuActive ? true : false
+		});
 	}
 	render() {
 		const scrolled = this.props.scrollPosition > 200 ? 'scrolled' : '';
@@ -45,7 +39,19 @@ export default class header extends Component {
 					</div>
 					<div className="site-menu__control" onClick={this.handleClick}>
 						<div className="site-menu__menu-button">
-							<img src="http://dummyimage.com/65x25/4d494d/686a82.gif&text=placeholder+image" alt="site-menu" />
+							<div className="nav-top">
+								<div className="nav-top__left"></div>
+								<div className="nav-top__middle"></div>
+								<div className="nav-top__right"></div>
+							</div>
+							<div className="nav-middle">
+								<div className="nav-middle__left"></div>
+								<div className="nav-middle__right"></div>
+							</div>
+							<div className="nav-bottom">
+								<div className="nav-bottom__left"></div>
+								<div className="nav-bottom__right"></div>
+							</div>
 						</div>
 					</div>
 				</div>
