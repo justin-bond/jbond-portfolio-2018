@@ -3,7 +3,14 @@ import { Link } from "react-router-dom";
 import logo from '../images/jb-logo.svg';
 
 export default class header extends Component {
+	constructor(props) {
+		super();
+
+	}
 	render() {
+		const scrolled = this.props.scrollPosition > 200 ? 'scrolled' : '';
+		console.log(this.props.scrollPosition);
+		console.log(scrolled);
 		return (
 			<div className="header container">
 				<div className="row">
@@ -11,7 +18,7 @@ export default class header extends Component {
 						<img src={logo} className="header__logo col-xs-1" alt="logo" />
 					</Link>
 				</div>
-				<div id="site-menu" className="site-menu">
+				<div id="site-menu" className={`site-menu ${scrolled}`}>
 					<div className="site-menu__wrapper">
 						<nav className="site-menu__navigation">
 							<ul>
