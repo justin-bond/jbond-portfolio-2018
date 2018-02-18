@@ -112,6 +112,7 @@ export default class home extends Component {
 						<HomeRecentWork
 							projects={this.state.projects}
 							recentWork={this.state.recentWork}
+							props={this.props}
 						/>
 					</div>
 				</div>

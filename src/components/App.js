@@ -49,7 +49,7 @@ class App extends Component {
 							<Route 
 								path="/" 
 								exact 
-								render={()=><Home />} />
+								render={(props)=><Home {...props} />} />
 							<Route component={NoMatch}/>
 						</Switch>
 						<Footer />

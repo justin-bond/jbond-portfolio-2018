@@ -5,7 +5,7 @@ export default class contact_form extends Component {
 		event.preventDefault();
 	}
 	handleChange(e) {
-		console.log(e.target.value);
+		// console.log(e.target.value);
 		if (e.target.value) {
 			e.target.classList.add("has-text");
 		} else {
@@ -14,7 +14,7 @@ export default class contact_form extends Component {
 	}
 	render() {
 		return (
-			<div className="contact--container">
+			<div className="contact--container" id="contact">
 				<div className="contact--form__container">
 					<div className="contact--form__title">
 						Lets Talk

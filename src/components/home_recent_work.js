@@ -1,10 +1,18 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
+import { animateScroll as scroll } from 'react-scroll';
 
 export default class home_recent_work extends Component {
 	constructor() {
 		super();
 		this.renderRecentWork = this.renderRecentWork.bind(this);
+	}
+	componentDidMount() {
+		const hash = this.props.props.location.hash.replace('#', '');
+		if (hash === 'work') {
+			const anchorPosition = document.getElementById(hash).getBoundingClientRect();
+			scroll.scrollTo(anchorPosition.top + window.scrollY);
+		}
 	}
 	renderRecentWork(key) {
 		const work = this.props.projects[key];
@@ -26,7 +34,7 @@ export default class home_recent_work extends Component {
 	}
 	render() {
 		return (
-			<div className="home-recent">
+			<div className="home-recent" id="work">
 				<h1 className="home-recent__text">
 					Recent Work
 				</h1>

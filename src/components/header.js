@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import logo from '../images/jb-logo.svg';
+import { animateScroll as scroll } from 'react-scroll';
 
 export default class header extends Component {
 	constructor(props) {
@@ -10,6 +11,15 @@ export default class header extends Component {
 			menuActive: false
 		}
 	}
+	scrollTo(anchor) {
+		if (anchor === 'top') {
+			scroll.scrollToTop();
+		} else if (document.getElementById(anchor) != null) {
+			const anchorPosition = document.getElementById(anchor).getBoundingClientRect();
+			scroll.scrollTo(anchorPosition.top + window.scrollY);
+		}
+		console.log('test');
+	}
 	handleClick() {
 		this.setState({
 			menuActive: !this.state.menuActive ? true : false
@@ -18,8 +28,6 @@ export default class header extends Component {
 	render() {
 		const scrolled = this.props.scrollPosition > 200 ? 'scrolled' : '';
 		const menuActive = this.state.menuActive ? 'active' : '';
-		console.log(this.props.scrollPosition);
-		console.log(scrolled);
 		return (
 			<div className="header container">
 				<div className="row">
@@ -31,9 +39,9 @@ export default class header extends Component {
 					<div className="site-menu__wrapper">
 						<nav className="site-menu__navigation">
 							<ul>
-								<li><Link to="/">Home</Link></li>
-								<li><Link to="/">Work</Link></li>
-								<li><Link to="/">Contact</Link></li>
+								<li><Link to="/" onClick={()=>this.scrollTo('top')}>Home</Link></li>
+								<li><Link to="/#work" onClick={()=>this.scrollTo('work')}>Work</Link></li>
+								<li><Link to="#contact" onClick={()=>this.scrollTo('contact')} >Contact</Link></li>
 							</ul>
 						</nav>
 					</div>

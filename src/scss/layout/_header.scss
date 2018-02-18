@@ -29,7 +29,7 @@ body {
 		&.scrolled {
 			.site-menu__wrapper {
 				opacity: 0;
-				transform: translateX(50%);
+				transform: translateX(100%);
 			}
 			.site-menu__control {
 				display: block;
