@@ -5,6 +5,8 @@ $screen-md: em(992);
 $screen-lg: em(1200); 
 
 $mobile-up: min-width $screen-xs;
+$mobile-down: max-width $screen-xs;
 $tablet-up: min-width $screen-sm;
+$tablet-down: max-width $screen-sm;
 $desktop-up: min-width $screen-md;
 $lg-desktop-up: min-width $screen-lg;
