@@ -32,7 +32,7 @@ export default class header extends Component {
 			<div className="header container">
 				<div className="row">
 					<Link to="/">
-						<img src={logo} className="header__logo col-xs-1" alt="logo" />
+						<img src={logo} className="header__logo" alt="logo" />
 					</Link>
 				</div>
 				<div id="site-menu" className={`site-menu ${scrolled} ${menuActive}`}>

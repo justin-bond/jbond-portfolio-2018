@@ -8,15 +8,17 @@ body {
 	margin-bottom: 212px;
 }
 .header {
-	margin-top: 80px;
-	margin-bottom: 150px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	@include media($tablet-up) {
+		margin-top: 80px;
+		margin-bottom: 150px;
+	}
 }
 .header__logo {
-	// width: 80px;
+	width: 80px;
 }
 .site-menu {
-	// position: relative;
-	// overflow: hidden;
 	color: #fff;
 	@include media($tablet-up) {
 		z-index: 1000;
@@ -25,7 +27,6 @@ body {
 		right: 0;
 		width: 100%;
 		max-width: 350px;
-		// height: 150px;
 		&.scrolled {
 			.site-menu__wrapper {
 				opacity: 0;
@@ -45,84 +46,48 @@ body {
 	
 }
 .site-menu__control {
+	position: absolute;
+	top: 85px;
+	right: 40px;
+	width: 65px;
+	display: block;
+	cursor: pointer;
 	@include media($tablet-up) {
 		position: fixed;
-		top: 85px;
-		right: 40px;
-		width: 65px;
 		display: none;
-		cursor: pointer;
 	}
 }
 .site-menu__wrapper {
-	// position: absolute;
+	background: #191919;
+	transition: background .3s;
+	padding: 5px 0px;
+	overflow: hidden;
+	transition: opacity .3s,transform .5s;
+	opacity: 0;
+	transform: translateX(100%);
 	@include media($tablet-up) {
-		// position: absolute;
-		// top: 0;
-		// bottom: 0;
-		// left: 0;
-		// right: 0;
-		background: #191919;
-		transition: background .3s;
-		// background: transparent;
 		padding: 65px 25px;
-		overflow: hidden;
-		transition: opacity .3s,transform .5s;
+		opacity: 1;
+		transform: translateX(0);
 	}
 }
 .site-menu__navigation {
-	// opacity: 0;
-	// visibility: hidden;
-	// position: absolute;
-	// top: calc(50% - 20px);
-	// left: 50%;
-	// transform: translate(-50%,-50%);
-	// overflow: hidden;
-	// transition: opacity .3s;
-	@include media($tablet-up) {
-		// opacity: 1;
-		// background: transparent;
-		// visibility: visible;
-		// position: relative;
-		// top: auto;
-		// left: auto;
-		// transform: none;
-		// overflow: hidden;
-		// height: 100%;
-	}
 	ul {
-		// z-index: 1001;
-		// position: relative;
-		// list-style: none;
-		// text-align: center;
-		@include media($tablet-up) {
-			// height: 100%;
-			// // margin: 0 50px;
-			display: flex;
-			// align-content: center;
-			// align-items: center;
-			// justify-content: flex-start;
-		}
+		display: flex;
 	}
 	li {
-		display: block;
-		@include media($tablet-up) {
-			margin-right: 75px;
-			display: inline-block;
-			&:last-child {
-				margin-right: 0;
-			}
+		margin-right: 75px;
+		&:last-child {
+			margin-right: 0;
 		}
 		a {
 			display: inline-block;
 			border-bottom: 2px solid transparent;
 			transition: border-bottom .3s;
-			@include media($tablet-up) {
-				color: #fff;
-				line-height: 4em;
-				&:hover {
-					border-bottom: 2px solid #fff;
-				}
+			color: #fff;
+			line-height: 4em;
+			&:hover {
+				border-bottom: 2px solid #fff;
 			}
 		}
 	}
