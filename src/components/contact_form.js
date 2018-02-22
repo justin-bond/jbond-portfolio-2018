@@ -1,8 +1,41 @@
 import React, { Component } from 'react';
 
 export default class contact_form extends Component {
+	constructor(props) {
+	    super(props);
+		this.state = {
+			form: ''
+		};
+  	}  
 	submitForm(event) {
 		event.preventDefault();
+		this.fetchFirst();
+	}
+	fetchFirst() {
+		var data = {
+			name: document.getElementById('name').value,
+			email: document.getElementById('email').value,
+			phone: document.getElementById('phone').value,
+			company: document.getElementById('name').value,
+			message: document.getElementById('message').value,
+		};
+		// console.log(data);
+		fetch("http://justin-bond.com/sendmail/test.php", {
+			method: "POST",
+			body: JSON.stringify(data),
+			headers: new Headers({
+				'Content-Type': 'application/json'
+			}),
+		}).then(
+			res => res.json()
+		)
+		.catch(
+			error => console.error('Error:', error)
+		)
+		.then(
+			response => console.log('Success:', response),
+			this.setState({form: 'completed'})
+		);
 	}
 	handleChange(e) {
 		// console.log(e.target.value);
