@@ -38,7 +38,7 @@ export default class contact_form extends Component {
 				if (response['status'] === 1){
 					this.setState({form: 'completed'});
 				} else {
-					this.setState({form: 'There was an error'});
+					this.setState({form: response['error']});
 				}
 			}
 		);
