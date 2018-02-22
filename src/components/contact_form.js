@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 export default class contact_form extends Component {
 	constructor(props) {
 	    super(props);
-	    this.handleChange = this.handleChange.bind(this);
 		this.state = {
 			form: '',
 			formName: '',
@@ -70,23 +69,23 @@ export default class contact_form extends Component {
 					<form className="contact--form" onSubmit={(e) => this.submitForm(e)}>
 						<div className="contact--form__name">
 							<label htmlFor="name">Your Name*</label>
-							<input onChange={this.handleChange} type="text" name="formName" id="name" required/>
+							<input onChange={(e) => this.handleChange(e)} type="text" name="formName" id="name" required/>
 						</div>
 						<div className="contact--form__email">
 							<label htmlFor="email">Email Address*</label>
-							<input onChange={this.handleChange} type="text" name="formEmail" id="email" required/>
+							<input onChange={(e) => this.handleChange(e)} type="text" name="formEmail" id="email" required/>
 						</div>
 						<div className="contact--form__phone">
 							<label htmlFor="phone">Phone*</label>
-							<input onChange={this.handleChange} type="text" name="formPhone" id="phone" required/>
+							<input onChange={(e) => this.handleChange(e)} type="text" name="formPhone" id="phone" required/>
 						</div>
 						<div className="contact--form__company">
 							<label htmlFor="company">Company</label>
-							<input onChange={this.handleChange} type="text" name="formCompany" id="company" />
+							<input onChange={(e) => this.handleChange(e)} type="text" name="formCompany" id="company" />
 						</div>
 						<div className="contact--form__message">
 							<label htmlFor="message">Message*</label>
-							<input onChange={this.handleChange} type="text" name="formMessage" id="message" required/>
+							<input onChange={(e) => this.handleChange(e)} type="text" name="formMessage" id="message" required/>
 						</div>
 						<div className="contact--form__submit">
 							<input type="submit" className="btn--primary" value="Submit Message" />
