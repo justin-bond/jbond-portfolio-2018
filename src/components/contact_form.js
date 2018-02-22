@@ -33,8 +33,14 @@ export default class contact_form extends Component {
 			error => console.error('Error:', error)
 		)
 		.then(
-			response => console.log('Success:', response),
-			this.setState({form: 'completed'})
+			response => {
+				console.log('Success:', response);
+				if (response['status'] === 1){
+					this.setState({form: 'completed'});
+				} else {
+					this.setState({form: 'There was an error'});
+				}
+			}
 		);
 	}
 	handleChange(e) {
