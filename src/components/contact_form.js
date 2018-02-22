@@ -3,23 +3,29 @@ import React, { Component } from 'react';
 export default class contact_form extends Component {
 	constructor(props) {
 	    super(props);
+	    this.handleChange = this.handleChange.bind(this);
 		this.state = {
-			form: ''
+			form: '',
+			formName: '',
+			formEmail: '',
+			formPhone: '',
+			formCompany: '',
+			formMessage: '',
 		};
-  	}  
+  	}
 	submitForm(event) {
 		event.preventDefault();
-		this.fetchFirst();
-	}
-	fetchFirst() {
-		var data = {
-			name: document.getElementById('name').value,
-			email: document.getElementById('email').value,
-			phone: document.getElementById('phone').value,
-			company: document.getElementById('name').value,
-			message: document.getElementById('message').value,
+		// console.log(event);
+
+		const data = {
+			name: this.state.formName,
+			email: this.state.formEmail,
+			phone: this.state.formPhone,
+			company: this.state.formCompany,
+			message: this.state.formMessage,
 		};
 		// console.log(data);
+
 		fetch("http://justin-bond.com/sendmail/test.php", {
 			method: "POST",
 			body: JSON.stringify(data),
@@ -44,7 +50,10 @@ export default class contact_form extends Component {
 		);
 	}
 	handleChange(e) {
-		// console.log(e.target.value);
+		const state = this.state;
+		state[e.target.name] = e.target.value;
+		this.setState(state);
+		
 		if (e.target.value) {
 			e.target.classList.add("has-text");
 		} else {
@@ -58,26 +67,26 @@ export default class contact_form extends Component {
 					<div className="contact--form__title">
 						Lets Talk
 					</div>
-					<form className="contact--form" ref={(input) => this.contactForm = input} onSubmit={(e) => this.submitForm(e)}>
+					<form className="contact--form" onSubmit={(e) => this.submitForm(e)}>
 						<div className="contact--form__name">
 							<label htmlFor="name">Your Name*</label>
-							<input onChange={(e) => this.handleChange(e)} ref={(input) => {this.name = input}} type="text" name="name" id="name" required/>
+							<input onChange={this.handleChange} type="text" name="formName" id="name" required/>
 						</div>
 						<div className="contact--form__email">
 							<label htmlFor="email">Email Address*</label>
-							<input onChange={(e) => this.handleChange(e)} ref={(input) => {this.email = input}} type="text" name="email" id="email" required/>
+							<input onChange={this.handleChange} type="text" name="formEmail" id="email" required/>
 						</div>
 						<div className="contact--form__phone">
 							<label htmlFor="phone">Phone*</label>
-							<input onChange={(e) => this.handleChange(e)} ref={(input) => {this.phone = input}} type="text" name="phone" id="phone" required/>
+							<input onChange={this.handleChange} type="text" name="formPhone" id="phone" required/>
 						</div>
 						<div className="contact--form__company">
 							<label htmlFor="company">Company</label>
-							<input onChange={(e) => this.handleChange(e)} ref={(input) => {this.company = input}} type="text" name="company" id="company" />
+							<input onChange={this.handleChange} type="text" name="formCompany" id="company" />
 						</div>
 						<div className="contact--form__message">
 							<label htmlFor="message">Message*</label>
-							<input onChange={(e) => this.handleChange(e)} ref={(input) => {this.message = input}} type="text" name="message" id="message" required/>
+							<input onChange={this.handleChange} type="text" name="formMessage" id="message" required/>
 						</div>
 						<div className="contact--form__submit">
 							<input type="submit" className="btn--primary" value="Submit Message" />
