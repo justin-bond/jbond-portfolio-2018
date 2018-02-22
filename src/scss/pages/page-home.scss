@@ -15,10 +15,13 @@
 	font-family: $share-tech-mono;
 	li {
 		margin-bottom: 31px;
-	}
-	span {
-		margin-right: 18px;
-		margin-bottom: 10px;
+		margin-left: 40px;
+		&:before {
+			color: $code-blue;
+			content: "//";
+			margin-left: -40px;
+			margin-right: 20px;
+		}
 	}
 }
 .home-recent {

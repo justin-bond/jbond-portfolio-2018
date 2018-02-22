@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 
 export default class home_intro extends Component {
 	render() {
-		const bullet = '//';
 		return (
 			<div className="home-intro__container">
 				<h1 className="home-intro__text">
@@ -10,8 +9,8 @@ export default class home_intro extends Component {
 				</h1>
 				<div className="home-intro__bullets">
 					<ul>
-						<li><span className="code-color-blue">{bullet}</span>Skilled in Wordpress, Magento, PHP, and Javascript.</li>
-						<li><span className="code-color-blue">{bullet}</span>Enjoys...</li>
+						<li>Skilled in Wordpress, Magento, PHP, and Javascript.</li>
+						<li>Enjoys...</li>
 					</ul>
 				</div>
 			</div>
