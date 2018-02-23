@@ -6,10 +6,31 @@ import { animateScroll as scroll } from 'react-scroll';
 export default class header extends Component {
 	constructor(props) {
 		super();
-		this.handleClick = this.handleClick.bind(this);
 		this.state = {
+			scrollPosition: 0,
 			menuActive: false
 		}
+	}
+	componentDidMount() {
+		window.addEventListener('scroll', ()=>this.listenScrollEvent());
+	}
+	componentWillUnmount() {
+		window.removeEventListener('scroll', ()=>this.listenScrollEvent());
+	}
+	listenScrollEvent(event) {
+		// let supportPageOffset = window.pageXOffset !== undefined;
+		// let isCSS1Compat = ((document.compatMode || '') === 'CSS1Compat');
+		// let scroll = {
+		// 	x: supportPageOffset ? window.pageXOffset : isCSS1Compat ? document.documentElement.scrollLeft : document.body.scrollLeft,
+		// 	y: supportPageOffset ? window.pageYOffset : isCSS1Compat ? document.documentElement.scrollTop : document.body.scrollTop
+		// };
+		let scroll = window.pageYOffset;
+		this.setState({
+			'scrollPosition': scroll
+		});
+		// if(scroll.y > 3000){ // 3000px (arbitrary - put whatever point you need there.)
+		//     console.log('fire!');
+		// }
 	}
 	scrollTo(anchor) {
 		if (anchor === 'top') {
@@ -18,7 +39,6 @@ export default class header extends Component {
 			const anchorPosition = document.getElementById(anchor).getBoundingClientRect();
 			scroll.scrollTo(anchorPosition.top + window.scrollY);
 		}
-		console.log('test');
 	}
 	handleClick() {
 		this.setState({
@@ -26,7 +46,7 @@ export default class header extends Component {
 		});
 	}
 	render() {
-		const scrolled = this.props.scrollPosition > 200 ? 'scrolled' : '';
+		const scrolled = this.state.scrollPosition > 200 ? 'scrolled' : '';
 		const menuActive = this.state.menuActive ? 'active' : '';
 		return (
 			<div className="header container">
@@ -45,7 +65,7 @@ export default class header extends Component {
 							</ul>
 						</nav>
 					</div>
-					<div className="site-menu__control" onClick={this.handleClick}>
+					<div className="site-menu__control" onClick={()=>this.handleClick()}>
 						<div className="site-menu__menu-button">
 							<div className="nav-top">
 								<div className="nav-top__left"></div>
