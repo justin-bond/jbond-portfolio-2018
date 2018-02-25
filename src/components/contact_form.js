@@ -5,11 +5,13 @@ export default class contact_form extends Component {
 	    super(props);
 		this.state = {
 			form: '',
+			formShow: true,
 			formName: '',
 			formEmail: '',
 			formPhone: '',
 			formCompany: '',
 			formMessage: '',
+			formResponse: '',
 		};
   	}
 	submitForm(event) {
@@ -41,9 +43,12 @@ export default class contact_form extends Component {
 			response => {
 				console.log('Success:', response);
 				if (response['status'] === 1){
-					this.setState({form: 'completed'});
+					this.setState({
+						formResponse: 'accepted',
+						formShow: false
+					});
 				} else {
-					this.setState({form: response['error']});
+					this.setState({formResponse: response['error']});
 				}
 			}
 		);
@@ -59,14 +64,35 @@ export default class contact_form extends Component {
 			e.target.classList.remove("has-text");
 		}
 	}
+	formResponse() {
+		const { formResponse } = this.state;
+		console.log(formResponse);
+		switch (formResponse) {
+			case '':
+				return;
+			case 'accepted':
+				return (
+					<div>
+						Thank you for reaching out. I will be in touch as soon as possible.
+					</div>
+				)
+			default:
+				return (
+					<div>
+						{formResponse}
+					</div>
+				);
+		}
+	}
 	render() {
+		const formShow = this.state.formShow ? '' : 'collapse';
 		return (
 			<div className="contact--container" id="contact">
 				<div className="contact--form__container">
 					<div className="contact--form__title">
 						Lets Talk
 					</div>
-					<form className="contact--form" onSubmit={(e) => this.submitForm(e)}>
+					<form className={`contact--form ${formShow}`} onSubmit={(e) => this.submitForm(e)}>
 						<div className="contact--form__name">
 							<label htmlFor="name">Your Name*</label>
 							<input onChange={(e) => this.handleChange(e)} type="text" name="formName" id="name" required/>
@@ -91,6 +117,7 @@ export default class contact_form extends Component {
 							<input type="submit" className="btn--primary" value="Submit Message" />
 						</div>
 					</form>
+					{this.formResponse()}
 				</div>
 				<div className="contact--social">
 					<div>GitHub</div>

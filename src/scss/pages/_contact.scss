@@ -18,11 +18,19 @@
 	margin-bottom: 60px;
 }
 .contact--form {
+	transition: all 1s ease-in-out;
+	max-height: 1000px;
+	opacity: 1;
 	@include media($tablet-up) {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-column-gap: 120px;
 		grid-row-gap: 60px;
+	}
+	&.collapse {
+		max-height: 0;
+		overflow: hidden;
+		opacity: 0;
 	}
 	> div {
 		min-height: 85px;
