@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
 
 export default class contact_form extends Component {
 	constructor(props) {
@@ -120,8 +121,12 @@ export default class contact_form extends Component {
 					{this.formResponse()}
 				</div>
 				<div className="contact--social">
-					<div>GitHub</div>
-					<div>social</div>
+					<div><i className="fab fa-github"></i>GitHub</div>
+					<div className="contact--social__icons">
+						<a href="https://www.linkedin.com/in/justinbond909/" target="_blank" ><i className="fab fa-linkedin"></i></a>
+						<a href="https://github.com/geekster909" target="_blank" ><i className="fab fa-github"></i></a>
+						<a href="https://codepen.io/geekster909/" target="_blank" ><i className="fab fa-codepen"></i></a>
+					</div>
 				</div>
 			</div>
 		);
