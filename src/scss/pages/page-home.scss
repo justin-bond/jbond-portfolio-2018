@@ -92,13 +92,13 @@
 	    }
 	}
 	li {
-		position: relative;
-		padding-left: 17px;
 		margin-bottom: 22px;
+		margin-left: 40px;
 		&:before {
-			content: '},';
-			position: absolute;
-			left: -5px;
+			// color: $code-blue;
+			content: "//";
+			margin-left: -40px;
+			margin-right: 20px;
 		}
 		span {
 			color: #fff;
