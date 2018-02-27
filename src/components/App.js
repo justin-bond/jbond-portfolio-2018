@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Header from './header';
 import Footer from './footer';
 import Home from './home';
+import Project from './project';
 import NoMatch from './no_match';
 
 class App extends Component {
@@ -146,6 +147,10 @@ class App extends Component {
 								path="/" 
 								exact 
 								render={(props)=><Home {...props} state={this.state}/>} />
+							<Route 
+								path="/project/:project" 
+								exact 
+								render={(props)=><Project {...props} state={this.state}/>} />
 							<Route component={NoMatch}/>
 						</Switch>
 						<Footer />
