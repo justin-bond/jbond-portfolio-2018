@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import ContactForm from './contact_form';
 
 export default class project_detailed extends Component {
+	componentWillMount() {
+		window.scrollTo(0, 0)
+	}
 	render() {
 		return (
 			<div className="homepage container">
