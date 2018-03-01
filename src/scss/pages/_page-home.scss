@@ -29,6 +29,11 @@
 }
 .home-recent__text {
 	margin-bottom: 60px;
+	font-size: 2em;
+    font-weight: 600;
+	@include media($tablet-up) {
+		font-size: 3em;
+	}
 }
 .home-recent__top {
 	@include media($tablet-up) {

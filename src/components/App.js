@@ -14,6 +14,7 @@ class App extends Component {
 			projects: {
 				kushion: {
 					companyName: 'Kushion',
+					slug: 'kushion',
 					logo: 'http://justin-bond.com/projects/kushion-logo.svg',
 					screenshot: 'http://dummyimage.com/498x300/4d494d/686a82.gif&text=Kushion',
 					link: 'https://kushion.com',
@@ -21,6 +22,7 @@ class App extends Component {
 				},
 				jason_mark: {
 					companyName: 'Jason Markk',
+					slug: 'jason_mark',
 					logo: 'http://justin-bond.com/projects/jm-logo.svg',
 					screenshot: 'http://dummyimage.com/498x300/4d494d/686a82.gif&text=Jason%20Markk',
 					link: 'https://jasonmarkk.com/',
@@ -28,6 +30,7 @@ class App extends Component {
 				},
 				oliver_peoples: {
 					companyName: 'Oliver Peoples',
+					slug: 'oliver_peoples',
 					logo: 'http://justin-bond.com/projects/op-logo.svg',
 					screenshot: 'http://dummyimage.com/498x300/4d494d/686a82.gif&text=Oliver%20Peoples',
 					link: 'https://oliverpeoples.com/',
@@ -35,6 +38,7 @@ class App extends Component {
 				},
 				killspencer: {
 					companyName: 'Killspencer',
+					slug: 'killspencer',
 					logo: 'http://justin-bond.com/projects/ks-logo.svg',
 					screenshot: 'http://dummyimage.com/498x300/4d494d/686a82.gif&text=Killspencer',
 					link: 'https://killspencer.com/',
@@ -42,6 +46,7 @@ class App extends Component {
 				},
 				mastercraft: {
 					companyName: 'Mastercraft',
+					slug: 'mastercraft',
 					logo: 'http://justin-bond.com/projects/kushion-logo.svg',
 					screenshot: 'http://dummyimage.com/498x300/4d494d/686a82.gif&text=mastercraft',
 					link: 'http://www.mastercraft.com/',
@@ -49,6 +54,7 @@ class App extends Component {
 				},
 				the_craft: {
 					companyName: 'The Craft',
+					slug: 'the_craft',
 					logo: 'http://justin-bond.com/projects/kushion-logo.svg',
 					screenshot: 'http://dummyimage.com/498x300/4d494d/686a82.gif&text=the_craft',
 					link: 'https://craftlife.com/',
@@ -56,6 +62,7 @@ class App extends Component {
 				},
 				armada: {
 					companyName: 'Armada',
+					slug: 'armada',
 					logo: 'http://justin-bond.com/projects/kushion-logo.svg',
 					screenshot: 'http://dummyimage.com/498x300/4d494d/686a82.gif&text=armada',
 					link: 'https://armadaskis.com/',
@@ -63,6 +70,7 @@ class App extends Component {
 				},
 				alain_mikli: {
 					companyName: 'Alain Mikli',
+					slug: 'alain_mikli',
 					logo: 'http://justin-bond.com/projects/kushion-logo.svg',
 					screenshot: 'http://dummyimage.com/498x300/4d494d/686a82.gif&text=alain_mikli',
 					link: 'http://www.alainmikli.com/',
@@ -70,6 +78,7 @@ class App extends Component {
 				},
 				tcs_jerky: {
 					companyName: 'TCS Jerky',
+					slug: 'tcs_jerky',
 					logo: 'http://justin-bond.com/projects/kushion-logo.svg',
 					screenshot: 'http://dummyimage.com/498x300/4d494d/686a82.gif&text=tcs_jerky',
 					link: 'https://www.tcsjerky.com/',
@@ -77,6 +86,7 @@ class App extends Component {
 				},
 				edgeproducts: {
 					companyName: 'Edgeproducts',
+					slug: 'edgeproducts',
 					logo: 'http://justin-bond.com/projects/kushion-logo.svg',
 					screenshot: 'http://dummyimage.com/498x300/4d494d/686a82.gif&text=edgeproducts',
 					link: 'https://edgeproducts.com/',
@@ -84,6 +94,7 @@ class App extends Component {
 				},
 				superchips: {
 					companyName: 'Superchips',
+					slug: 'superchips',
 					logo: 'http://justin-bond.com/projects/kushion-logo.svg',
 					screenshot: 'http://dummyimage.com/498x300/4d494d/686a82.gif&text=superchips',
 					link: 'https://superchips.com/',
@@ -91,6 +102,7 @@ class App extends Component {
 				},
 				diablosport: {
 					companyName: 'Diablosport',
+					slug: 'diablosport',
 					logo: 'http://justin-bond.com/projects/kushion-logo.svg',
 					screenshot: 'http://dummyimage.com/498x300/4d494d/686a82.gif&text=diablosport',
 					link: 'http://www.diablosport.com',
@@ -98,6 +110,7 @@ class App extends Component {
 				},
 				ami_styling: {
 					companyName: 'AMI Styling',
+					slug: 'ami_styling',
 					logo: 'http://justin-bond.com/projects/kushion-logo.svg',
 					screenshot: 'http://dummyimage.com/498x300/4d494d/686a82.gif&text=ami_styling',
 					link: 'https://amistyling.com/',
@@ -105,6 +118,7 @@ class App extends Component {
 				},
 				readylift: {
 					companyName: 'Readylift',
+					slug: 'readylift',
 					logo: 'http://justin-bond.com/projects/kushion-logo.svg',
 					screenshot: 'http://dummyimage.com/498x300/4d494d/686a82.gif&text=readylift',
 					link: 'https://www.readylift.com/',
@@ -112,6 +126,7 @@ class App extends Component {
 				},
 				tkfit: {
 					companyName: 'TKFit',
+					slug: 'tkfit',
 					logo: 'http://justin-bond.com/projects/kushion-logo.svg',
 					screenshot: 'http://dummyimage.com/498x300/4d494d/686a82.gif&text=tkfit',
 					link: 'https://tkfitep.com/',
@@ -119,6 +134,7 @@ class App extends Component {
 				},
 				condemned_le_mc: {
 					companyName: 'Condemned LE MC',
+					slug: 'condemned_le_mc',
 					logo: 'http://justin-bond.com/projects/kushion-logo.svg',
 					screenshot: 'http://dummyimage.com/498x300/4d494d/686a82.gif&text=condemned_le_mc',
 					link: '',
@@ -126,6 +142,7 @@ class App extends Component {
 				},
 				fit_body_boot_camp: {
 					companyName: 'Fit Body Boot Camp',
+					slug: 'fit_body_boot_camp',
 					logo: 'http://justin-bond.com/projects/kushion-logo.svg',
 					screenshot: 'http://dummyimage.com/498x300/4d494d/686a82.gif&text=Fit%20Body%20Boot%20Camp',
 					link: 'https://www.fitbodybootcamp.com/chinohillsfitnessbootcamp/',

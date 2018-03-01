@@ -7,10 +7,17 @@ export default class project_detailed extends Component {
 	}
 	render() {
 		return (
-			<div className="homepage container">
+			<div className="project-page container">
 				<div className="row">
 					<div className="col-md-10 col-md-push-1">
-						Project Details Go Here!
+						<div className="project__container">
+							<div className="project__image">
+								<img src={this.props.project.screenshot} alt={this.props.project.slug}/>
+							</div>
+							<div className="project__name">
+								<h1>{this.props.project.companyName}</h1>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div className="row">
