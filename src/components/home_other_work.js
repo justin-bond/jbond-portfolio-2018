@@ -10,7 +10,7 @@ export default class home_other_work extends Component {
 		const work = this.props.projects[key];
 		if (work) {
 			return (
-				<li key={key}><Link to="" className="code-color-blue">{ work['companyName'] } <span>,</span></Link></li>
+				<li key={key}><Link to={`/project/${key}`} className="code-color-blue">{ work['companyName'] } <span>,</span></Link></li>
 			)
 		}
 	}

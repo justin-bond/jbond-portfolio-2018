@@ -21,7 +21,7 @@ export default class home_recent_work extends Component {
 		}
 		return (
 			<div className="home-recent__work" key={key}>
-				<Link to="/">
+				<Link to={`/project/${key}`}>
 					<div className="recent__work--loaded">
 						<img src={ work['logo'] } alt="company_logo" />
 					</div>
