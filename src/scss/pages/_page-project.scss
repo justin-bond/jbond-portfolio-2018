@@ -26,6 +26,7 @@
 		}
 	}
 	.project__skills {
+		margin-bottom: 80px;
 		li {
 			list-style-type: none;
 			margin-bottom: 22px;
@@ -35,6 +36,14 @@
 				content: "//";
 				margin-left: -40px;
 				margin-right: 20px;
+			}
+		}
+	}
+	.project__home {
+		a {
+			color: #fff;
+			&:hover {
+				color: #000;
 			}
 		}
 	}

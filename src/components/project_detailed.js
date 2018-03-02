@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ContactForm from './contact_form';
+import { Link } from "react-router-dom";
 
 export default class project_detailed extends Component {
 	componentWillMount() {
@@ -24,6 +25,9 @@ export default class project_detailed extends Component {
 								<li className="">Skill 01</li>
 								<li className="">Skill 02</li>
 								<li className="">Skill 03</li>
+							</div>
+							<div className="project__home">
+								<Link to="/" className="btn--primary">Back to Home</Link>
 							</div>
 						</div>
 					</div>
