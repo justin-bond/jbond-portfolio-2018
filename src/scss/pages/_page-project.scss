@@ -18,4 +18,24 @@
 			font-size: 3em;
 		}
 	}
+	.project__link {
+		font-family: $share-tech-mono;
+		margin-bottom: 22px;
+		a {
+			color: $code-blue;
+		}
+	}
+	.project__skills {
+		li {
+			list-style-type: none;
+			margin-bottom: 22px;
+			margin-left: 40px;
+			&:before {
+				color: $code-blue;
+				content: "//";
+				margin-left: -40px;
+				margin-right: 20px;
+			}
+		}
+	}
 }

@@ -17,6 +17,14 @@ export default class project_detailed extends Component {
 							<div className="project__name">
 								<h1>{this.props.project.companyName}</h1>
 							</div>
+							<div className="project__link">
+								<a href={this.props.project.link} target="_blank">Website Link</a>
+							</div>
+							<div className="project__skills">
+								<li className="">Skill 01</li>
+								<li className="">Skill 02</li>
+								<li className="">Skill 03</li>
+							</div>
 						</div>
 					</div>
 				</div>
