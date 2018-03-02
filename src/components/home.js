@@ -5,6 +5,9 @@ import HomeOtherWork from './home_other_work';
 import ContactForm from './contact_form';
 
 export default class home extends Component {
+	componentWillMount() {
+		window.scrollTo(0, 0);
+	}
 	render() {
 		return (
 			<div className="homepage container">
