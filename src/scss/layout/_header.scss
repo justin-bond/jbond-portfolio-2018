@@ -11,7 +11,7 @@ body {
 	margin-top: 40px;
 	margin-bottom: 40px;
 	@include media($tablet-up) {
-		margin-top: 80px;
+		margin-top: 60px;
 		margin-bottom: 150px;
 	}
 }
@@ -74,7 +74,7 @@ body {
 	padding-right: 40px;
 	@include media($tablet-up) {
 		position: fixed;
-		top: 85px;
+		top: 65px;
 		display: none;
 	}
 }
@@ -87,7 +87,7 @@ body {
 	opacity: 0;
 	transform: translateX(100%);
 	@include media($tablet-up) {
-		padding: 65px 25px;
+		padding: 45px 25px;
 		opacity: 1;
 		transform: translateX(0);
 	}
