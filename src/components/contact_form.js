@@ -120,7 +120,7 @@ export default class contact_form extends Component {
 					{this.formResponse()}
 				</div>
 				<div className="contact--social">
-					<div><i className="fab fa-github"></i> GitHub</div>
+					<div>Follow Me On</div>
 					<div className="contact--social__icons">
 						<a href="https://www.linkedin.com/in/justinbond909/" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin"></i></a>
 						<a href="https://github.com/geekster909" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i></a>
