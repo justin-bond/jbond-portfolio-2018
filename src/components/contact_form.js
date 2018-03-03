@@ -27,7 +27,7 @@ export default class contact_form extends Component {
 		};
 		// console.log(data);
 
-		fetch("http://justin-bond.com/sendmail/test.php", {
+		fetch("http://justin-bond.com/sendmail/index.php", {
 			method: "POST",
 			body: JSON.stringify(data),
 			headers: new Headers({
