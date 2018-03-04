@@ -54,7 +54,11 @@ class App extends Component {
 					logo: 'http://justin-bond.com/projects/ks-logo.svg',
 					screenshot: 'http://dummyimage.com/498x300/4d494d/686a82.gif&text=Killspencer',
 					link: 'https://killspencer.com/',
-					skills: ['',''],
+					skills: [
+						'Shopify',
+						'Custom Shopify Theme',
+						'HTML/CSS/PHP/jQuery',
+					],
 				},
 				mastercraft: {
 					companyName: 'Mastercraft',
@@ -62,7 +66,10 @@ class App extends Component {
 					logo: 'http://justin-bond.com/projects/kushion-logo.svg',
 					screenshot: 'http://dummyimage.com/498x300/4d494d/686a82.gif&text=mastercraft',
 					link: 'http://www.mastercraft.com/',
-					skills: ['',''],
+					skills: [
+						'Codeignitor',
+						'HTML/CSS/PHP/jQuery',
+					],
 				},
 				the_craft: {
 					companyName: 'The Craft',
@@ -82,7 +89,11 @@ class App extends Component {
 					logo: 'http://justin-bond.com/projects/kushion-logo.svg',
 					screenshot: 'http://dummyimage.com/498x300/4d494d/686a82.gif&text=armada',
 					link: 'https://armadaskis.com/',
-					skills: ['',''],
+					skills: [
+						'Wordpress/WooCommerce',
+						'Custom Wordpress Theme',
+						'HTML/CSS/PHP/jQuery',
+					],
 				},
 				alain_mikli: {
 					companyName: 'Alain Mikli',
@@ -90,7 +101,11 @@ class App extends Component {
 					logo: 'http://justin-bond.com/projects/kushion-logo.svg',
 					screenshot: 'http://dummyimage.com/498x300/4d494d/686a82.gif&text=alain_mikli',
 					link: 'http://www.alainmikli.com/',
-					skills: ['',''],
+					skills: [
+						'Wordpress/WooCommerce',
+						'Custom Wordpress Theme',
+						'HTML/CSS/PHP/jQuery',
+					],
 				},
 				tcs_jerky: {
 					companyName: 'TCS Jerky',
