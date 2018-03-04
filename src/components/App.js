@@ -15,8 +15,8 @@ class App extends Component {
 				kushion: {
 					companyName: 'Kushion',
 					slug: 'kushion',
-					logo: 'http://justin-bond.com/projects/kushion-logo.svg',
-					screenshot: 'http://dummyimage.com/498x300/4d494d/686a82.gif&text=Kushion',
+					logo: 'http://justin-bond.com/projects/logos/kushion-logo.svg',
+					screenshot: 'http://justin-bond.com/projects/screenshots/Kushion.jpg',
 					link: 'https://kushion.com',
 					skills: [
 						'Wordpress/WooCommerce',
@@ -27,8 +27,8 @@ class App extends Component {
 				jason_mark: {
 					companyName: 'Jason Markk',
 					slug: 'jason_mark',
-					logo: 'http://justin-bond.com/projects/jm-logo.svg',
-					screenshot: 'http://dummyimage.com/498x300/4d494d/686a82.gif&text=Jason%20Markk',
+					logo: 'http://justin-bond.com/projects/logos/jm-logo.svg',
+					screenshot: 'http://justin-bond.com/projects/screenshots/JM.jpg',
 					link: 'https://jasonmarkk.com/',
 					skills: [
 						'Wordpress/Magento',
@@ -39,8 +39,8 @@ class App extends Component {
 				oliver_peoples: {
 					companyName: 'Oliver Peoples',
 					slug: 'oliver_peoples',
-					logo: 'http://justin-bond.com/projects/op-logo.svg',
-					screenshot: 'http://dummyimage.com/498x300/4d494d/686a82.gif&text=Oliver%20Peoples',
+					logo: 'http://justin-bond.com/projects/logos/op-logo.svg',
+					screenshot: 'http://justin-bond.com/projects/screenshots/OliverPeoples.jpg',
 					link: 'https://oliverpeoples.com/',
 					skills: [
 						'Wordpress/Magento',
@@ -51,8 +51,8 @@ class App extends Component {
 				killspencer: {
 					companyName: 'Killspencer',
 					slug: 'killspencer',
-					logo: 'http://justin-bond.com/projects/ks-logo.svg',
-					screenshot: 'http://dummyimage.com/498x300/4d494d/686a82.gif&text=Killspencer',
+					logo: 'http://justin-bond.com/projects/logos/ks-logo.svg',
+					screenshot: 'http://justin-bond.com/projects/screenshots/Killspencer.jpg',
 					link: 'https://killspencer.com/',
 					skills: [
 						'Shopify',
@@ -63,8 +63,8 @@ class App extends Component {
 				mastercraft: {
 					companyName: 'Mastercraft',
 					slug: 'mastercraft',
-					logo: 'http://justin-bond.com/projects/kushion-logo.svg',
-					screenshot: 'http://dummyimage.com/498x300/4d494d/686a82.gif&text=mastercraft',
+					logo: 'http://justin-bond.com/projects/logos/kushion-logo.svg',
+					screenshot: 'http://justin-bond.com/projects/screenshots/Kushion.jpg',
 					link: 'http://www.mastercraft.com/',
 					skills: [
 						'Codeignitor',
@@ -74,8 +74,8 @@ class App extends Component {
 				the_craft: {
 					companyName: 'The Craft',
 					slug: 'the_craft',
-					logo: 'http://justin-bond.com/projects/kushion-logo.svg',
-					screenshot: 'http://dummyimage.com/498x300/4d494d/686a82.gif&text=the_craft',
+					logo: 'http://justin-bond.com/projects/logos/kushion-logo.svg',
+					screenshot: 'http://justin-bond.com/projects/screenshots/Kushion.jpg',
 					link: 'https://craftlife.com/',
 					skills: [
 						'Wordpress/Magento 2',
@@ -86,8 +86,8 @@ class App extends Component {
 				armada: {
 					companyName: 'Armada',
 					slug: 'armada',
-					logo: 'http://justin-bond.com/projects/kushion-logo.svg',
-					screenshot: 'http://dummyimage.com/498x300/4d494d/686a82.gif&text=armada',
+					logo: 'http://justin-bond.com/projects/logos/kushion-logo.svg',
+					screenshot: 'http://justin-bond.com/projects/screenshots/Kushion.jpg',
 					link: 'https://armadaskis.com/',
 					skills: [
 						'Wordpress/WooCommerce',
@@ -98,8 +98,8 @@ class App extends Component {
 				alain_mikli: {
 					companyName: 'Alain Mikli',
 					slug: 'alain_mikli',
-					logo: 'http://justin-bond.com/projects/kushion-logo.svg',
-					screenshot: 'http://dummyimage.com/498x300/4d494d/686a82.gif&text=alain_mikli',
+					logo: 'http://justin-bond.com/projects/logos/kushion-logo.svg',
+					screenshot: 'http://justin-bond.com/projects/screenshots/Kushion.jpg',
 					link: 'http://www.alainmikli.com/',
 					skills: [
 						'Wordpress/WooCommerce',
@@ -110,8 +110,8 @@ class App extends Component {
 				tcs_jerky: {
 					companyName: 'TCS Jerky',
 					slug: 'tcs_jerky',
-					logo: 'http://justin-bond.com/projects/kushion-logo.svg',
-					screenshot: 'http://dummyimage.com/498x300/4d494d/686a82.gif&text=tcs_jerky',
+					logo: 'http://justin-bond.com/projects/logos/kushion-logo.svg',
+					screenshot: 'http://justin-bond.com/projects/screenshots/Kushion.jpg',
 					link: 'https://www.tcsjerky.com/',
 					skills: [
 						'Wordpress/Magento',
@@ -122,8 +122,8 @@ class App extends Component {
 				edgeproducts: {
 					companyName: 'Edgeproducts',
 					slug: 'edgeproducts',
-					logo: 'http://justin-bond.com/projects/kushion-logo.svg',
-					screenshot: 'http://dummyimage.com/498x300/4d494d/686a82.gif&text=edgeproducts',
+					logo: 'http://justin-bond.com/projects/logos/kushion-logo.svg',
+					screenshot: 'http://justin-bond.com/projects/screenshots/Kushion.jpg',
 					link: 'https://edgeproducts.com/',
 					skills: [
 						'Wordpress/Magento',
@@ -134,8 +134,8 @@ class App extends Component {
 				superchips: {
 					companyName: 'Superchips',
 					slug: 'superchips',
-					logo: 'http://justin-bond.com/projects/kushion-logo.svg',
-					screenshot: 'http://dummyimage.com/498x300/4d494d/686a82.gif&text=superchips',
+					logo: 'http://justin-bond.com/projects/logos/kushion-logo.svg',
+					screenshot: 'http://justin-bond.com/projects/screenshots/Kushion.jpg',
 					link: 'https://superchips.com/',
 					skills: [
 						'Wordpress/Magento',
@@ -146,8 +146,8 @@ class App extends Component {
 				diablosport: {
 					companyName: 'Diablosport',
 					slug: 'diablosport',
-					logo: 'http://justin-bond.com/projects/kushion-logo.svg',
-					screenshot: 'http://dummyimage.com/498x300/4d494d/686a82.gif&text=diablosport',
+					logo: 'http://justin-bond.com/projects/logos/kushion-logo.svg',
+					screenshot: 'http://justin-bond.com/projects/screenshots/Kushion.jpg',
 					link: 'http://www.diablosport.com',
 					skills: [
 						'Wordpress/Magento',
@@ -158,8 +158,8 @@ class App extends Component {
 				ami_styling: {
 					companyName: 'AMI Styling',
 					slug: 'ami_styling',
-					logo: 'http://justin-bond.com/projects/kushion-logo.svg',
-					screenshot: 'http://dummyimage.com/498x300/4d494d/686a82.gif&text=ami_styling',
+					logo: 'http://justin-bond.com/projects/logos/kushion-logo.svg',
+					screenshot: 'http://justin-bond.com/projects/screenshots/Kushion.jpg',
 					link: 'https://amistyling.com/',
 					skills: [
 						'Wordpress/Magento 2',
@@ -170,8 +170,8 @@ class App extends Component {
 				readylift: {
 					companyName: 'Readylift',
 					slug: 'readylift',
-					logo: 'http://justin-bond.com/projects/kushion-logo.svg',
-					screenshot: 'http://dummyimage.com/498x300/4d494d/686a82.gif&text=readylift',
+					logo: 'http://justin-bond.com/projects/logos/kushion-logo.svg',
+					screenshot: 'http://justin-bond.com/projects/screenshots/Kushion.jpg',
 					link: 'https://www.readylift.com/',
 					skills: [
 						'Wordpress/Magento 2',
@@ -182,8 +182,8 @@ class App extends Component {
 				tkfit: {
 					companyName: 'TKFit',
 					slug: 'tkfit',
-					logo: 'http://justin-bond.com/projects/kushion-logo.svg',
-					screenshot: 'http://dummyimage.com/498x300/4d494d/686a82.gif&text=tkfit',
+					logo: 'http://justin-bond.com/projects/logos/kushion-logo.svg',
+					screenshot: 'http://justin-bond.com/projects/screenshots/Kushion.jpg',
 					link: 'https://tkfitep.com/',
 					skills: [
 						'Wordpress'
@@ -192,8 +192,8 @@ class App extends Component {
 				condemned_le_mc: {
 					companyName: 'Condemned LE MC',
 					slug: 'condemned_le_mc',
-					logo: 'http://justin-bond.com/projects/kushion-logo.svg',
-					screenshot: 'http://dummyimage.com/498x300/4d494d/686a82.gif&text=condemned_le_mc',
+					logo: 'http://justin-bond.com/projects/logos/kushion-logo.svg',
+					screenshot: 'http://justin-bond.com/projects/screenshots/Kushion.jpg',
 					link: '',
 					skills: [
 						'Wordpress',
@@ -204,8 +204,8 @@ class App extends Component {
 				fit_body_boot_camp: {
 					companyName: 'Fit Body Boot Camp',
 					slug: 'fit_body_boot_camp',
-					logo: 'http://justin-bond.com/projects/kushion-logo.svg',
-					screenshot: 'http://dummyimage.com/498x300/4d494d/686a82.gif&text=Fit%20Body%20Boot%20Camp',
+					logo: 'http://justin-bond.com/projects/logos/kushion-logo.svg',
+					screenshot: 'http://justin-bond.com/projects/screenshots/Kushion.jpg',
 					link: 'https://www.fitbodybootcamp.com/chinohillsfitnessbootcamp/',
 					skills: [
 						'Wordpress',

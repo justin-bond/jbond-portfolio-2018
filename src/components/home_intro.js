@@ -10,7 +10,7 @@ export default class home_intro extends Component {
 				<div className="home-intro__bullets">
 					<ul>
 						<li>Skilled in Wordpress, Magento, PHP, and Javascript.</li>
-						<li>Enjoys...</li>
+						<li>When I am not working I like to golf, ride motorcycles, go on hikes, and taking my dog out.</li>
 					</ul>
 				</div>
 			</div>
