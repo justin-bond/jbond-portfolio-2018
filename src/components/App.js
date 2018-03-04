@@ -18,7 +18,11 @@ class App extends Component {
 					logo: 'http://justin-bond.com/projects/kushion-logo.svg',
 					screenshot: 'http://dummyimage.com/498x300/4d494d/686a82.gif&text=Kushion',
 					link: 'https://kushion.com',
-					skills: ['',''],
+					skills: [
+						'Wordpress/WooCommerce',
+						'Custom Wordpress Theme',
+						'HTML/CSS/PHP/jQuery',
+					],
 				},
 				jason_mark: {
 					companyName: 'Jason Markk',
@@ -26,7 +30,11 @@ class App extends Component {
 					logo: 'http://justin-bond.com/projects/jm-logo.svg',
 					screenshot: 'http://dummyimage.com/498x300/4d494d/686a82.gif&text=Jason%20Markk',
 					link: 'https://jasonmarkk.com/',
-					skills: ['',''],
+					skills: [
+						'Wordpress/Magento',
+						'Custom Wordpress/Magento Theme',
+						'HTML/CSS/PHP/jQuery',
+					],
 				},
 				oliver_peoples: {
 					companyName: 'Oliver Peoples',
@@ -34,7 +42,11 @@ class App extends Component {
 					logo: 'http://justin-bond.com/projects/op-logo.svg',
 					screenshot: 'http://dummyimage.com/498x300/4d494d/686a82.gif&text=Oliver%20Peoples',
 					link: 'https://oliverpeoples.com/',
-					skills: ['',''],
+					skills: [
+						'Wordpress/Magento',
+						'Custom Wordpress/Magento Theme',
+						'HTML/CSS/PHP/jQuery',
+					],
 				},
 				killspencer: {
 					companyName: 'Killspencer',
@@ -58,7 +70,11 @@ class App extends Component {
 					logo: 'http://justin-bond.com/projects/kushion-logo.svg',
 					screenshot: 'http://dummyimage.com/498x300/4d494d/686a82.gif&text=the_craft',
 					link: 'https://craftlife.com/',
-					skills: ['',''],
+					skills: [
+						'Wordpress/Magento 2',
+						'Custom Wordpress/Magento Theme',
+						'HTML/CSS/PHP/jQuery',
+					],
 				},
 				armada: {
 					companyName: 'Armada',
@@ -82,7 +98,11 @@ class App extends Component {
 					logo: 'http://justin-bond.com/projects/kushion-logo.svg',
 					screenshot: 'http://dummyimage.com/498x300/4d494d/686a82.gif&text=tcs_jerky',
 					link: 'https://www.tcsjerky.com/',
-					skills: ['',''],
+					skills: [
+						'Wordpress/Magento',
+						'Custom Wordpress/Magento Theme',
+						'HTML/CSS/PHP/jQuery',
+					],
 				},
 				edgeproducts: {
 					companyName: 'Edgeproducts',
@@ -90,7 +110,11 @@ class App extends Component {
 					logo: 'http://justin-bond.com/projects/kushion-logo.svg',
 					screenshot: 'http://dummyimage.com/498x300/4d494d/686a82.gif&text=edgeproducts',
 					link: 'https://edgeproducts.com/',
-					skills: ['',''],
+					skills: [
+						'Wordpress/Magento',
+						'Custom Wordpress/Magento Theme',
+						'HTML/CSS/PHP/jQuery',
+					],
 				},
 				superchips: {
 					companyName: 'Superchips',
@@ -98,7 +122,11 @@ class App extends Component {
 					logo: 'http://justin-bond.com/projects/kushion-logo.svg',
 					screenshot: 'http://dummyimage.com/498x300/4d494d/686a82.gif&text=superchips',
 					link: 'https://superchips.com/',
-					skills: ['',''],
+					skills: [
+						'Wordpress/Magento',
+						'Custom Wordpress/Magento Theme',
+						'HTML/CSS/PHP/jQuery',
+					],
 				},
 				diablosport: {
 					companyName: 'Diablosport',
@@ -106,7 +134,11 @@ class App extends Component {
 					logo: 'http://justin-bond.com/projects/kushion-logo.svg',
 					screenshot: 'http://dummyimage.com/498x300/4d494d/686a82.gif&text=diablosport',
 					link: 'http://www.diablosport.com',
-					skills: ['',''],
+					skills: [
+						'Wordpress/Magento',
+						'Custom Wordpress/Magento Theme',
+						'HTML/CSS/PHP/jQuery',
+					],
 				},
 				ami_styling: {
 					companyName: 'AMI Styling',
@@ -114,7 +146,11 @@ class App extends Component {
 					logo: 'http://justin-bond.com/projects/kushion-logo.svg',
 					screenshot: 'http://dummyimage.com/498x300/4d494d/686a82.gif&text=ami_styling',
 					link: 'https://amistyling.com/',
-					skills: ['',''],
+					skills: [
+						'Wordpress/Magento 2',
+						'Custom Wordpress/Magento Theme',
+						'HTML/CSS/PHP/jQuery',
+					],
 				},
 				readylift: {
 					companyName: 'Readylift',
@@ -122,7 +158,11 @@ class App extends Component {
 					logo: 'http://justin-bond.com/projects/kushion-logo.svg',
 					screenshot: 'http://dummyimage.com/498x300/4d494d/686a82.gif&text=readylift',
 					link: 'https://www.readylift.com/',
-					skills: ['',''],
+					skills: [
+						'Wordpress/Magento 2',
+						'Custom Wordpress/Magento Theme',
+						'HTML/CSS/PHP/jQuery',
+					],
 				},
 				tkfit: {
 					companyName: 'TKFit',
@@ -130,7 +170,9 @@ class App extends Component {
 					logo: 'http://justin-bond.com/projects/kushion-logo.svg',
 					screenshot: 'http://dummyimage.com/498x300/4d494d/686a82.gif&text=tkfit',
 					link: 'https://tkfitep.com/',
-					skills: ['',''],
+					skills: [
+						'Wordpress'
+					],
 				},
 				condemned_le_mc: {
 					companyName: 'Condemned LE MC',
@@ -138,7 +180,11 @@ class App extends Component {
 					logo: 'http://justin-bond.com/projects/kushion-logo.svg',
 					screenshot: 'http://dummyimage.com/498x300/4d494d/686a82.gif&text=condemned_le_mc',
 					link: '',
-					skills: ['',''],
+					skills: [
+						'Wordpress',
+						'Custom Wordpress Theme',
+						'HTML/CSS/PHP/jQuery',
+					],
 				},
 				fit_body_boot_camp: {
 					companyName: 'Fit Body Boot Camp',
@@ -146,7 +192,11 @@ class App extends Component {
 					logo: 'http://justin-bond.com/projects/kushion-logo.svg',
 					screenshot: 'http://dummyimage.com/498x300/4d494d/686a82.gif&text=Fit%20Body%20Boot%20Camp',
 					link: 'https://www.fitbodybootcamp.com/chinohillsfitnessbootcamp/',
-					skills: ['',''],
+					skills: [
+						'Wordpress',
+						'Custom Wordpress Theme',
+						'HTML/CSS/PHP/jQuery',
+					],
 				}
 			},
 			recentWork: ['kushion', 'jason_mark', 'oliver_peoples', 'killspencer'],

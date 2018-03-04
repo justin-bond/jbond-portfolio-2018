@@ -3,28 +3,50 @@ import ContactForm from './contact_form';
 import { Link } from "react-router-dom";
 
 export default class project_detailed extends Component {
+	constructor() {
+		super();
+		this.renderSkills = this.renderSkills.bind(this);
+	}
 	componentWillMount() {
 		window.scrollTo(0, 0);
 	}
+	renderSkills(key) {
+		if (key) {
+			return (
+				<li className="" key={key}>{key}</li>
+			); 
+		} else {
+			return;
+		}
+	}
+	renderProjectLink() {
+		if (this.props.project.link) {
+			return (
+				<a href={this.props.project.link} target="_blank">Website Link</a>
+			);
+		} else {
+			return;
+		}
+	}
 	render() {
+		const { project } = this.props;
+		console.log(project);
 		return (
 			<div className="project-page container">
 				<div className="row">
 					<div className="col-md-10 col-md-push-1">
 						<div className="project__container">
 							<div className="project__image">
-								<img src={this.props.project.screenshot} alt={this.props.project.slug}/>
+								<img src={project.screenshot} alt={project.slug}/>
 							</div>
 							<div className="project__name">
-								<h1>{this.props.project.companyName}</h1>
+								<h1>{project.companyName}</h1>
 							</div>
 							<div className="project__link">
-								<a href={this.props.project.link} target="_blank">Website Link</a>
+								{this.renderProjectLink()}
 							</div>
 							<div className="project__skills">
-								<li className="">Skill 01</li>
-								<li className="">Skill 02</li>
-								<li className="">Skill 03</li>
+								{project.skills.map(this.renderSkills)}
 							</div>
 							<div className="project__home">
 								<Link to="/" className="btn--primary">Back to Home</Link>
