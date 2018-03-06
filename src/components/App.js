@@ -63,8 +63,8 @@ class App extends Component {
 				mastercraft: {
 					companyName: 'Mastercraft',
 					slug: 'mastercraft',
-					logo: 'http://justin-bond.com/projects/logos/kushion-logo.svg',
-					screenshot: 'http://justin-bond.com/projects/screenshots/Kushion.jpg',
+					logo: '',
+					screenshot: 'http://justin-bond.com/projects/screenshots/Mastercraft.jpg',
 					link: 'http://www.mastercraft.com/',
 					skills: [
 						'Codeignitor',
@@ -74,8 +74,8 @@ class App extends Component {
 				the_craft: {
 					companyName: 'The Craft',
 					slug: 'the_craft',
-					logo: 'http://justin-bond.com/projects/logos/kushion-logo.svg',
-					screenshot: 'http://justin-bond.com/projects/screenshots/Kushion.jpg',
+					logo: '',
+					screenshot: 'http://justin-bond.com/projects/screenshots/TheCraft.jpg',
 					link: 'https://craftlife.com/',
 					skills: [
 						'Wordpress/Magento 2',
@@ -84,10 +84,10 @@ class App extends Component {
 					],
 				},
 				armada: {
-					companyName: 'Armada',
+					companyName: 'Armada Skis',
 					slug: 'armada',
-					logo: 'http://justin-bond.com/projects/logos/kushion-logo.svg',
-					screenshot: 'http://justin-bond.com/projects/screenshots/Kushion.jpg',
+					logo: '',
+					screenshot: 'http://justin-bond.com/projects/screenshots/Armada.jpg',
 					link: 'https://armadaskis.com/',
 					skills: [
 						'Wordpress/WooCommerce',
@@ -98,8 +98,8 @@ class App extends Component {
 				alain_mikli: {
 					companyName: 'Alain Mikli',
 					slug: 'alain_mikli',
-					logo: 'http://justin-bond.com/projects/logos/kushion-logo.svg',
-					screenshot: 'http://justin-bond.com/projects/screenshots/Kushion.jpg',
+					logo: '',
+					screenshot: 'http://justin-bond.com/projects/screenshots/AlainMikli.jpg',
 					link: 'http://www.alainmikli.com/',
 					skills: [
 						'Wordpress/WooCommerce',
@@ -110,8 +110,8 @@ class App extends Component {
 				tcs_jerky: {
 					companyName: 'TCS Jerky',
 					slug: 'tcs_jerky',
-					logo: 'http://justin-bond.com/projects/logos/kushion-logo.svg',
-					screenshot: 'http://justin-bond.com/projects/screenshots/Kushion.jpg',
+					logo: '',
+					screenshot: 'http://justin-bond.com/projects/screenshots/TcsJery.jpg',
 					link: 'https://www.tcsjerky.com/',
 					skills: [
 						'Wordpress/Magento',
@@ -122,8 +122,8 @@ class App extends Component {
 				edgeproducts: {
 					companyName: 'Edgeproducts',
 					slug: 'edgeproducts',
-					logo: 'http://justin-bond.com/projects/logos/kushion-logo.svg',
-					screenshot: 'http://justin-bond.com/projects/screenshots/Kushion.jpg',
+					logo: '',
+					screenshot: 'http://justin-bond.com/projects/screenshots/EdgeProducts.jpg',
 					link: 'https://edgeproducts.com/',
 					skills: [
 						'Wordpress/Magento',
@@ -134,8 +134,8 @@ class App extends Component {
 				superchips: {
 					companyName: 'Superchips',
 					slug: 'superchips',
-					logo: 'http://justin-bond.com/projects/logos/kushion-logo.svg',
-					screenshot: 'http://justin-bond.com/projects/screenshots/Kushion.jpg',
+					logo: '',
+					screenshot: 'http://justin-bond.com/projects/screenshots/Superchips.jpg',
 					link: 'https://superchips.com/',
 					skills: [
 						'Wordpress/Magento',
@@ -146,8 +146,8 @@ class App extends Component {
 				diablosport: {
 					companyName: 'Diablosport',
 					slug: 'diablosport',
-					logo: 'http://justin-bond.com/projects/logos/kushion-logo.svg',
-					screenshot: 'http://justin-bond.com/projects/screenshots/Kushion.jpg',
+					logo: '',
+					screenshot: 'http://justin-bond.com/projects/screenshots/Diablosport.jpg',
 					link: 'http://www.diablosport.com',
 					skills: [
 						'Wordpress/Magento',
@@ -158,8 +158,8 @@ class App extends Component {
 				ami_styling: {
 					companyName: 'AMI Styling',
 					slug: 'ami_styling',
-					logo: 'http://justin-bond.com/projects/logos/kushion-logo.svg',
-					screenshot: 'http://justin-bond.com/projects/screenshots/Kushion.jpg',
+					logo: '',
+					screenshot: 'http://justin-bond.com/projects/screenshots/AmiStyling.jpg',
 					link: 'https://amistyling.com/',
 					skills: [
 						'Wordpress/Magento 2',
@@ -170,8 +170,8 @@ class App extends Component {
 				readylift: {
 					companyName: 'Readylift',
 					slug: 'readylift',
-					logo: 'http://justin-bond.com/projects/logos/kushion-logo.svg',
-					screenshot: 'http://justin-bond.com/projects/screenshots/Kushion.jpg',
+					logo: '',
+					screenshot: 'http://justin-bond.com/projects/screenshots/Readylift.jpg',
 					link: 'https://www.readylift.com/',
 					skills: [
 						'Wordpress/Magento 2',
@@ -182,8 +182,8 @@ class App extends Component {
 				tkfit: {
 					companyName: 'TKFit',
 					slug: 'tkfit',
-					logo: 'http://justin-bond.com/projects/logos/kushion-logo.svg',
-					screenshot: 'http://justin-bond.com/projects/screenshots/Kushion.jpg',
+					logo: '',
+					screenshot: 'http://justin-bond.com/projects/screenshots/TKFit.jpg',
 					link: 'https://tkfitep.com/',
 					skills: [
 						'Wordpress'
@@ -192,8 +192,8 @@ class App extends Component {
 				condemned_le_mc: {
 					companyName: 'Condemned LE MC',
 					slug: 'condemned_le_mc',
-					logo: 'http://justin-bond.com/projects/logos/kushion-logo.svg',
-					screenshot: 'http://justin-bond.com/projects/screenshots/Kushion.jpg',
+					logo: '',
+					screenshot: '',
 					link: '',
 					skills: [
 						'Wordpress',
@@ -204,8 +204,8 @@ class App extends Component {
 				fit_body_boot_camp: {
 					companyName: 'Fit Body Boot Camp',
 					slug: 'fit_body_boot_camp',
-					logo: 'http://justin-bond.com/projects/logos/kushion-logo.svg',
-					screenshot: 'http://justin-bond.com/projects/screenshots/Kushion.jpg',
+					logo: '',
+					screenshot: '',
 					link: 'https://www.fitbodybootcamp.com/chinohillsfitnessbootcamp/',
 					skills: [
 						'Wordpress',
@@ -215,7 +215,7 @@ class App extends Component {
 				}
 			},
 			recentWork: ['kushion', 'jason_mark', 'oliver_peoples', 'killspencer'],
-			otherWork: ['mastercraft', 'the_craft', 'armada', 'alain_mikli', 'tcs_jerky', 'edgeproducts', 'superchips', 'diablosport', 'ami_styling', 'readylift', 'tkfit', 'condemned_le_mc', 'fit_body_boot_camp' ]
+			otherWork: ['mastercraft', 'the_craft', 'armada', 'alain_mikli', 'tcs_jerky', 'edgeproducts', 'superchips', 'diablosport', 'ami_styling', 'readylift', 'tkfit' ]
 		}
 	}
 	render() {

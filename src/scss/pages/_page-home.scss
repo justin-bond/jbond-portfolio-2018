@@ -1,7 +1,10 @@
 .home-intro__container {
-	padding-bottom: 100px;
+	padding-bottom: 40px;
 	border-bottom: 1px solid #707070;
 	margin-bottom: 100px;
+	@include media($tablet-up) {
+		padding-bottom: 100px;
+	}
 }
 .home-intro__text {
 	font-size: 2em;
@@ -30,7 +33,7 @@
 .home-recent__text {
 	margin-bottom: 60px;
 	font-size: 2em;
-    font-weight: 600;
+	font-weight: 600;
 	@include media($tablet-up) {
 		font-size: 3em;
 	}
@@ -45,24 +48,28 @@
 }
 .home-recent__work {
 	margin-bottom: 37px;
-    &:hover {
-    	// transition: all 0.5s ease-in-out;
-    	background-color: rgba(0,0,0, 0.5);
-    	box-shadow: 3px 3px 13px 0px rgba(0,0,0,0.75);
-    	.recent__work--loaded {
-    		display: none;
-    	}
-    	.recent__work--hover {
-			display: grid;
-    	}
-    }
+	@include media($tablet-up) {
+		&:hover {
+			background-color: rgba(0,0,0, 0.5);
+			box-shadow: 3px 3px 13px 0px rgba(0,0,0,0.75);
+			.recent__work--loaded {
+				display: none;
+			}
+			.recent__work--hover {
+				display: grid;
+			}
+		}
+	}
 }
 .recent__work--loaded,
 .recent__work--hover {
-	height: 350px;
+	height: 150px;
 	display: grid;
-    justify-content: center;
-    align-items: center;
+	justify-content: center;
+	align-items: center;
+	@include media($tablet-up) {
+		height: 350px;
+	}
 }
 .recent__work--loaded {
 	transition: all 0.5s ease-in-out;
@@ -95,9 +102,9 @@
 		@include media($tablet-up) {
 			list-style-type: none;
 			display: flex;
-	 		flex-flow: wrap column;
-	    	max-height: 215px;
-	    }
+			flex-flow: wrap column;
+			max-height: 215px;
+		}
 	}
 	li {
 		margin-bottom: 22px;
