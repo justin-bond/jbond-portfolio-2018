@@ -28,6 +28,15 @@ export default class project_detailed extends Component {
 			return;
 		}
 	}
+	renderAgencyTag() {
+		if (this.props.project.agency) {
+			return (
+				<div className="agency__tag">* a {this.props.project.agency} project.</div>
+			);
+		} else {
+			return;
+		}
+	}
 	render() {
 		const { project } = this.props;
 		console.log(project);
@@ -48,6 +57,7 @@ export default class project_detailed extends Component {
 							<div className="project__skills">
 								{project.skills.map(this.renderSkills)}
 							</div>
+							{this.renderAgencyTag()}
 							<div className="project__home">
 								<Link to="/" className="btn--primary">Back to Home</Link>
 							</div>

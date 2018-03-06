@@ -26,7 +26,6 @@
 		}
 	}
 	.project__skills {
-		margin-bottom: 80px;
 		li {
 			list-style-type: none;
 			margin-bottom: 22px;
@@ -39,7 +38,14 @@
 			}
 		}
 	}
+	.agency__tag {
+		font-style: italic;
+		font-size: 12px;
+		margin-bottom: 10px;
+		color: #ddd;
+	}
 	.project__home {
+		margin-top: 80px;
 		a {
 			color: #fff;
 			&:hover {

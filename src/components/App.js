@@ -15,6 +15,7 @@ class App extends Component {
 				kushion: {
 					companyName: 'Kushion',
 					slug: 'kushion',
+					agency: '530medialab',
 					logo: 'http://justin-bond.com/projects/logos/kushion-logo.svg',
 					screenshot: 'http://justin-bond.com/projects/screenshots/Kushion.jpg',
 					link: 'https://kushion.com',
@@ -22,11 +23,13 @@ class App extends Component {
 						'Wordpress/WooCommerce',
 						'Custom Wordpress Theme',
 						'HTML/CSS/PHP/jQuery',
+						'Custom Instagram API Feed',
 					],
 				},
 				jason_mark: {
 					companyName: 'Jason Markk',
 					slug: 'jason_mark',
+					agency: '530medialab',
 					logo: 'http://justin-bond.com/projects/logos/jm-logo.svg',
 					screenshot: 'http://justin-bond.com/projects/screenshots/JM.jpg',
 					link: 'https://jasonmarkk.com/',
@@ -34,11 +37,13 @@ class App extends Component {
 						'Wordpress/Magento',
 						'Custom Wordpress/Magento Theme',
 						'HTML/CSS/PHP/jQuery',
+						'Custom Instagram API Feed',
 					],
 				},
 				oliver_peoples: {
 					companyName: 'Oliver Peoples',
 					slug: 'oliver_peoples',
+					agency: '530medialab',
 					logo: 'http://justin-bond.com/projects/logos/op-logo.svg',
 					screenshot: 'http://justin-bond.com/projects/screenshots/OliverPeoples.jpg',
 					link: 'https://oliverpeoples.com/',
@@ -51,6 +56,7 @@ class App extends Component {
 				killspencer: {
 					companyName: 'Killspencer',
 					slug: 'killspencer',
+					agency: '530medialab',
 					logo: 'http://justin-bond.com/projects/logos/ks-logo.svg',
 					screenshot: 'http://justin-bond.com/projects/screenshots/Killspencer.jpg',
 					link: 'https://killspencer.com/',
@@ -63,6 +69,7 @@ class App extends Component {
 				mastercraft: {
 					companyName: 'Mastercraft',
 					slug: 'mastercraft',
+					agency: '530medialab',
 					logo: '',
 					screenshot: 'http://justin-bond.com/projects/screenshots/Mastercraft.jpg',
 					link: 'http://www.mastercraft.com/',
@@ -74,6 +81,7 @@ class App extends Component {
 				the_craft: {
 					companyName: 'The Craft',
 					slug: 'the_craft',
+					agency: '530medialab',
 					logo: '',
 					screenshot: 'http://justin-bond.com/projects/screenshots/TheCraft.jpg',
 					link: 'https://craftlife.com/',
@@ -86,8 +94,9 @@ class App extends Component {
 				armada: {
 					companyName: 'Armada Skis',
 					slug: 'armada',
+					agency: '530medialab',
 					logo: '',
-					screenshot: 'http://justin-bond.com/projects/screenshots/Armada.jpg',
+					screenshot: 'http://justin-bond.com/projects/screenshots/ArmadaSkis.jpg',
 					link: 'https://armadaskis.com/',
 					skills: [
 						'Wordpress/WooCommerce',
@@ -98,8 +107,9 @@ class App extends Component {
 				alain_mikli: {
 					companyName: 'Alain Mikli',
 					slug: 'alain_mikli',
+					agency: '530medialab',
 					logo: '',
-					screenshot: 'http://justin-bond.com/projects/screenshots/AlainMikli.jpg',
+					screenshot: 'http://justin-bond.com/projects/screenshots/Alainmikli.jpg',
 					link: 'http://www.alainmikli.com/',
 					skills: [
 						'Wordpress/WooCommerce',
@@ -110,8 +120,9 @@ class App extends Component {
 				tcs_jerky: {
 					companyName: 'TCS Jerky',
 					slug: 'tcs_jerky',
+					agency: '530medialab',
 					logo: '',
-					screenshot: 'http://justin-bond.com/projects/screenshots/TcsJery.jpg',
+					screenshot: 'http://justin-bond.com/projects/screenshots/TcsJerky.jpg',
 					link: 'https://www.tcsjerky.com/',
 					skills: [
 						'Wordpress/Magento',
@@ -122,8 +133,9 @@ class App extends Component {
 				edgeproducts: {
 					companyName: 'Edgeproducts',
 					slug: 'edgeproducts',
+					agency: '530medialab',
 					logo: '',
-					screenshot: 'http://justin-bond.com/projects/screenshots/EdgeProducts.jpg',
+					screenshot: 'http://justin-bond.com/projects/screenshots/Edge.jpg',
 					link: 'https://edgeproducts.com/',
 					skills: [
 						'Wordpress/Magento',
@@ -134,6 +146,7 @@ class App extends Component {
 				superchips: {
 					companyName: 'Superchips',
 					slug: 'superchips',
+					agency: '530medialab',
 					logo: '',
 					screenshot: 'http://justin-bond.com/projects/screenshots/Superchips.jpg',
 					link: 'https://superchips.com/',
@@ -146,6 +159,7 @@ class App extends Component {
 				diablosport: {
 					companyName: 'Diablosport',
 					slug: 'diablosport',
+					agency: '530medialab',
 					logo: '',
 					screenshot: 'http://justin-bond.com/projects/screenshots/Diablosport.jpg',
 					link: 'http://www.diablosport.com',
@@ -158,18 +172,21 @@ class App extends Component {
 				ami_styling: {
 					companyName: 'AMI Styling',
 					slug: 'ami_styling',
+					agency: '530medialab',
 					logo: '',
-					screenshot: 'http://justin-bond.com/projects/screenshots/AmiStyling.jpg',
+					screenshot: 'http://justin-bond.com/projects/screenshots/AMI.jpg',
 					link: 'https://amistyling.com/',
 					skills: [
 						'Wordpress/Magento 2',
 						'Custom Wordpress/Magento Theme',
 						'HTML/CSS/PHP/jQuery',
+						'Custom Instagram API Feed',
 					],
 				},
 				readylift: {
 					companyName: 'Readylift',
 					slug: 'readylift',
+					agency: '530medialab',
 					logo: '',
 					screenshot: 'http://justin-bond.com/projects/screenshots/Readylift.jpg',
 					link: 'https://www.readylift.com/',
@@ -177,13 +194,15 @@ class App extends Component {
 						'Wordpress/Magento 2',
 						'Custom Wordpress/Magento Theme',
 						'HTML/CSS/PHP/jQuery',
+						'Custom Instagram API Feed',
 					],
 				},
 				tkfit: {
 					companyName: 'TKFit',
 					slug: 'tkfit',
+					agency: '',
 					logo: '',
-					screenshot: 'http://justin-bond.com/projects/screenshots/TKFit.jpg',
+					screenshot: 'http://justin-bond.com/projects/screenshots/TKFit1.jpg',
 					link: 'https://tkfitep.com/',
 					skills: [
 						'Wordpress'
@@ -192,6 +211,7 @@ class App extends Component {
 				condemned_le_mc: {
 					companyName: 'Condemned LE MC',
 					slug: 'condemned_le_mc',
+					agency: '',
 					logo: '',
 					screenshot: '',
 					link: '',
@@ -204,6 +224,7 @@ class App extends Component {
 				fit_body_boot_camp: {
 					companyName: 'Fit Body Boot Camp',
 					slug: 'fit_body_boot_camp',
+					agency: '',
 					logo: '',
 					screenshot: '',
 					link: 'https://www.fitbodybootcamp.com/chinohillsfitnessbootcamp/',
