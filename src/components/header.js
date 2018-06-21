@@ -46,39 +46,41 @@ export default class header extends Component {
 		});
 	}
 	render() {
-		const scrolled = this.state.scrollPosition > 200 ? 'scrolled' : '';
+		const scrolled = this.state.scrollPosition > 125 ? 'scrolled' : '';
 		const menuActive = this.state.menuActive ? 'active' : '';
 		return (
-			<div className="header container">
-				<div className="row">
-					<Link to="/">
-						<img src={logo} className="header__logo" alt="logo" />
-					</Link>
-				</div>
-				<div id="site-menu" className={`site-menu ${scrolled} ${menuActive}`}>
-					<div className="site-menu__wrapper">
-						<nav className="site-menu__navigation">
-							<ul>
-								<li><Link to="/" onClick={()=>this.scrollTo('top')}>Home</Link></li>
-								<li><Link to="/#work" onClick={()=>this.scrollTo('work')}>Work</Link></li>
-								<li><Link to="#contact" onClick={()=>this.scrollTo('contact')} >Contact</Link></li>
-							</ul>
-						</nav>
-					</div>
-					<div className="site-menu__control" onClick={()=>this.handleClick()}>
-						<div className="site-menu__menu-button">
-							<div className="nav-top">
-								<div className="nav-top__left"></div>
-								<div className="nav-top__middle"></div>
-								<div className="nav-top__right"></div>
+			<div className={`header__container ${scrolled}`}>
+				<div className="header container">
+					<div className="row">
+						<Link to="/">
+							<img src={logo} className="header__logo" alt="logo" />
+						</Link>
+						<div id="site-menu" className={`site-menu ${menuActive}`}>
+							<div className="site-menu__wrapper">
+								<nav className="site-menu__navigation">
+									<ul>
+										<li><Link to="/" onClick={()=>this.scrollTo('top')}>Home</Link></li>
+										<li><Link to="/#work" onClick={()=>this.scrollTo('work')}>Work</Link></li>
+										<li><Link to="#contact" onClick={()=>this.scrollTo('contact')} >Contact</Link></li>
+									</ul>
+								</nav>
 							</div>
-							<div className="nav-middle">
-								<div className="nav-middle__left"></div>
-								<div className="nav-middle__right"></div>
-							</div>
-							<div className="nav-bottom">
-								<div className="nav-bottom__left"></div>
-								<div className="nav-bottom__right"></div>
+							<div className="site-menu__control" onClick={()=>this.handleClick()}>
+								<div className="site-menu__menu-button">
+									<div className="nav-top">
+										<div className="nav-top__left"></div>
+										<div className="nav-top__middle"></div>
+										<div className="nav-top__right"></div>
+									</div>
+									<div className="nav-middle">
+										<div className="nav-middle__left"></div>
+										<div className="nav-middle__right"></div>
+									</div>
+									<div className="nav-bottom">
+										<div className="nav-bottom__left"></div>
+										<div className="nav-bottom__right"></div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>

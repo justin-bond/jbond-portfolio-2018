@@ -5,14 +5,30 @@ body {
 	background-color: #191919;
 }
 .main-content {
+	margin-top: 240px;
 	margin-bottom: 212px;
 }
+.header__container {
+	// min-height: 276px;
+	z-index: 9999;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: #191919;
+	&.scrolled {
+		box-shadow: 3px 3px 13px 0px rgba(0, 0, 0, 0.75);
+		.header {
+			
+		}
+	}
+}
 .header {
-	margin-top: 40px;
-	margin-bottom: 40px;
+	padding-top: 40px;
+	padding-bottom: 40px;
 	@include media($tablet-up) {
-		margin-top: 60px;
-		margin-bottom: 150px;
+		padding-top: 10px;
+		padding-bottom: 10px;
 	}
 }
 .header__logo {
@@ -22,9 +38,7 @@ body {
 .site-menu {
 	color: #fff;
 	z-index: 1000;
-	position: absolute;
-	top: 0;
-	right: 0;
+	float: right;
 	width: 100%;
 	max-width: 150px;
 	overflow: hidden;
@@ -40,7 +54,6 @@ body {
 		}
 	}
 	@include media($tablet-up) {
-		position: fixed;
 		overflow: visible;
 		max-width: 350px;
 		&.scrolled {
@@ -87,7 +100,7 @@ body {
 	opacity: 0;
 	transform: translateX(100%);
 	@include media($tablet-up) {
-		padding: 45px 25px;
+		padding: 10px 25px;
 		opacity: 1;
 		transform: translateX(0);
 	}
