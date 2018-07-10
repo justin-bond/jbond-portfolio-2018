@@ -27,7 +27,7 @@ export default class contact_form extends Component {
 		};
 		// console.log(data);
 
-		fetch("http://justin-bond.com/sendmail/index.php", {
+		fetch("https://www.justin-bond.com/sendmail/index.php", {
 			method: "POST",
 			body: JSON.stringify(data),
 			headers: new Headers({
@@ -66,7 +66,7 @@ export default class contact_form extends Component {
 	}
 	formResponse() {
 		const { formResponse } = this.state;
-		console.log(formResponse);
+		// console.log(formResponse);
 		switch (formResponse) {
 			case '':
 				return;

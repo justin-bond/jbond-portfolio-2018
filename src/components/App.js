@@ -16,8 +16,8 @@ class App extends Component {
 					companyName: 'Kushion',
 					slug: 'kushion',
 					agency: '530medialab',
-					logo: 'http://justin-bond.com/projects/logos/kushion-logo.svg',
-					screenshot: 'http://justin-bond.com/projects/screenshots/Kushion.jpg',
+					logo: '/projects/logos/kushion-logo.svg',
+					screenshot: '/projects/screenshots/Kushion.jpg',
 					link: 'https://kushion.com',
 					skills: [
 						'Wordpress/WooCommerce',
@@ -30,8 +30,8 @@ class App extends Component {
 					companyName: 'Jason Markk',
 					slug: 'jason_mark',
 					agency: '530medialab',
-					logo: 'http://justin-bond.com/projects/logos/jm-logo.svg',
-					screenshot: 'http://justin-bond.com/projects/screenshots/JM.jpg',
+					logo: '/projects/logos/jm-logo.svg',
+					screenshot: '/projects/screenshots/JM.jpg',
 					link: 'https://jasonmarkk.com/',
 					skills: [
 						'Wordpress/Magento',
@@ -44,8 +44,8 @@ class App extends Component {
 					companyName: 'Oliver Peoples',
 					slug: 'oliver_peoples',
 					agency: '530medialab',
-					logo: 'http://justin-bond.com/projects/logos/op-logo.svg',
-					screenshot: 'http://justin-bond.com/projects/screenshots/OliverPeoples.jpg',
+					logo: '/projects/logos/op-logo.svg',
+					screenshot: '/projects/screenshots/OliverPeoples.jpg',
 					link: 'https://oliverpeoples.com/',
 					skills: [
 						'Wordpress/Magento',
@@ -57,8 +57,8 @@ class App extends Component {
 					companyName: 'Killspencer',
 					slug: 'killspencer',
 					agency: '530medialab',
-					logo: 'http://justin-bond.com/projects/logos/ks-logo.svg',
-					screenshot: 'http://justin-bond.com/projects/screenshots/Killspencer.jpg',
+					logo: '/projects/logos/ks-logo.svg',
+					screenshot: '/projects/screenshots/Killspencer.jpg',
 					link: 'https://killspencer.com/',
 					skills: [
 						'Shopify',
@@ -71,7 +71,7 @@ class App extends Component {
 					slug: 'mastercraft',
 					agency: '530medialab',
 					logo: '',
-					screenshot: 'http://justin-bond.com/projects/screenshots/Mastercraft.jpg',
+					screenshot: '/projects/screenshots/Mastercraft.jpg',
 					link: 'http://www.mastercraft.com/',
 					skills: [
 						'Codeignitor',
@@ -83,7 +83,7 @@ class App extends Component {
 					slug: 'the_craft',
 					agency: '530medialab',
 					logo: '',
-					screenshot: 'http://justin-bond.com/projects/screenshots/TheCraft.jpg',
+					screenshot: '/projects/screenshots/TheCraft.jpg',
 					link: 'https://craftlife.com/',
 					skills: [
 						'Wordpress/Magento 2',
@@ -96,7 +96,7 @@ class App extends Component {
 					slug: 'armada',
 					agency: '530medialab',
 					logo: '',
-					screenshot: 'http://justin-bond.com/projects/screenshots/ArmadaSkis.jpg',
+					screenshot: '/projects/screenshots/ArmadaSkis.jpg',
 					link: 'https://armadaskis.com/',
 					skills: [
 						'Wordpress/WooCommerce',
@@ -109,7 +109,7 @@ class App extends Component {
 					slug: 'alain_mikli',
 					agency: '530medialab',
 					logo: '',
-					screenshot: 'http://justin-bond.com/projects/screenshots/Alainmikli.jpg',
+					screenshot: '/projects/screenshots/Alainmikli.jpg',
 					link: 'http://www.alainmikli.com/',
 					skills: [
 						'Wordpress/WooCommerce',
@@ -122,7 +122,7 @@ class App extends Component {
 					slug: 'tcs_jerky',
 					agency: '530medialab',
 					logo: '',
-					screenshot: 'http://justin-bond.com/projects/screenshots/TcsJerky.jpg',
+					screenshot: '/projects/screenshots/TcsJerky.jpg',
 					link: 'https://www.tcsjerky.com/',
 					skills: [
 						'Wordpress/Magento',
@@ -135,7 +135,7 @@ class App extends Component {
 					slug: 'edgeproducts',
 					agency: '530medialab',
 					logo: '',
-					screenshot: 'http://justin-bond.com/projects/screenshots/Edge.jpg',
+					screenshot: '/projects/screenshots/Edge.jpg',
 					link: 'https://edgeproducts.com/',
 					skills: [
 						'Wordpress/Magento',
@@ -148,7 +148,7 @@ class App extends Component {
 					slug: 'superchips',
 					agency: '530medialab',
 					logo: '',
-					screenshot: 'http://justin-bond.com/projects/screenshots/Superchips.jpg',
+					screenshot: '/projects/screenshots/Superchips.jpg',
 					link: 'https://superchips.com/',
 					skills: [
 						'Wordpress/Magento',
@@ -161,7 +161,7 @@ class App extends Component {
 					slug: 'diablosport',
 					agency: '530medialab',
 					logo: '',
-					screenshot: 'http://justin-bond.com/projects/screenshots/Diablosport.jpg',
+					screenshot: '/projects/screenshots/Diablosport.jpg',
 					link: 'http://www.diablosport.com',
 					skills: [
 						'Wordpress/Magento',
@@ -174,7 +174,7 @@ class App extends Component {
 					slug: 'ami_styling',
 					agency: '530medialab',
 					logo: '',
-					screenshot: 'http://justin-bond.com/projects/screenshots/AMI.jpg',
+					screenshot: '/projects/screenshots/AMI.jpg',
 					link: 'https://amistyling.com/',
 					skills: [
 						'Wordpress/Magento 2',
@@ -188,7 +188,7 @@ class App extends Component {
 					slug: 'readylift',
 					agency: '530medialab',
 					logo: '',
-					screenshot: 'http://justin-bond.com/projects/screenshots/Readylift.jpg',
+					screenshot: '/projects/screenshots/Readylift.jpg',
 					link: 'https://www.readylift.com/',
 					skills: [
 						'Wordpress/Magento 2',
@@ -202,7 +202,7 @@ class App extends Component {
 					slug: 'tkfit',
 					agency: '',
 					logo: '',
-					screenshot: 'http://justin-bond.com/projects/screenshots/TKFit1.jpg',
+					screenshot: '/projects/screenshots/TKFit1.jpg',
 					link: 'https://tkfitep.com/',
 					skills: [
 						'Wordpress'

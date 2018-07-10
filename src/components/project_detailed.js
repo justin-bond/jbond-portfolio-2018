@@ -39,7 +39,7 @@ export default class project_detailed extends Component {
 	}
 	render() {
 		const { project } = this.props;
-		console.log(project);
+		// console.log(project);
 		return (
 			<div className="project-page container">
 				<div className="row">
