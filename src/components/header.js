@@ -46,7 +46,7 @@ export default class header extends Component {
 		});
 	}
 	render() {
-		const scrolled = this.state.scrollPosition > 200 ? 'scrolled' : '';
+		const scrolled = this.state.scrollPosition > 50 ? 'scrolled' : '';
 		const menuActive = this.state.menuActive ? 'active' : '';
 		return (
 			<div className="header container">
