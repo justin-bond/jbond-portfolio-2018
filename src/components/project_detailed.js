@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Helmet} from "react-helmet";
 import ContactForm from './contact_form';
 import { Link } from "react-router-dom";
 
@@ -42,6 +43,9 @@ export default class project_detailed extends Component {
 		// console.log(project);
 		return (
 			<div className="project-page container">
+				<Helmet>
+					<title>{`${project.companyName} | Justin Bond`} </title>
+				</Helmet>
 				<div className="row">
 					<div className="col-md-10 col-md-push-1">
 						<div className="project__container">
