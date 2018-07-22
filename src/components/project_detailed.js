@@ -48,14 +48,12 @@ export default class project_detailed extends Component {
 		     				<div className="js-video-placeholder">
 								<img src={this.props.project.screenshot} alt={this.props.project.slug}/>
 								<div className="video-banner__container">
-									<div className="l-container position-relative">
-										<div className="l-container video-banner__content position-left color-white">
-											<div className="video-banner__title is--uppercase">
-												Video Title
-											</div>
-											<div className="video-banner__link button--outline__white js-video-play">
-												<a className="" onClick={this.displayVideo}>Click to Play</a>
-											</div>
+									<div className="video-banner__content clearfix position-left">
+										<div className="video-banner__title">
+											Website Overview
+										</div>
+										<div className="video-banner__link button--outline__white js-video-play">
+											<a className="" onClick={this.displayVideo}>Click to Play</a>
 										</div>
 									</div>
 								</div>
