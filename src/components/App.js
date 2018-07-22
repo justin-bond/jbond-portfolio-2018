@@ -32,6 +32,8 @@ class App extends Component {
 					agency: '530medialab',
 					logo: '/projects/logos/jm-logo.svg',
 					screenshot: '/projects/screenshots/JM.jpg',
+					// video: '/projects/videos/jason-mark.mp4',
+					video: '281115650',
 					link: 'https://jasonmarkk.com/',
 					skills: [
 						'Wordpress/Magento',
@@ -46,6 +48,7 @@ class App extends Component {
 					agency: '530medialab',
 					logo: '/projects/logos/op-logo.svg',
 					screenshot: '/projects/screenshots/OliverPeoples.jpg',
+					video: '281115671',
 					link: 'https://oliverpeoples.com/',
 					skills: [
 						'Wordpress/Magento',
@@ -84,6 +87,7 @@ class App extends Component {
 					agency: '530medialab',
 					logo: '',
 					screenshot: '/projects/screenshots/TheCraft.jpg',
+					video: '281115682',
 					link: 'https://craftlife.com/',
 					skills: [
 						'Wordpress/Magento 2',

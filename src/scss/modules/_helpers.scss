@@ -9,6 +9,9 @@
 	display: table;
 	clear: both;
 }
+.position-relative {
+	position: relative;
+}
 .hide--mobile{
 	display:none;
 	@include media($mobile-up){
