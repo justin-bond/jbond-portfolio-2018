@@ -13,7 +13,7 @@ export default class home extends Component {
 		return (
 			<div className="homepage container">
 				<Helmet>
-					<title>{`Justin Bond`} </title>
+					<title>{`Justin Bond`}</title>
 				</Helmet>
 				<div className="row">
 					<div className="col-md-10 col-md-push-1">
