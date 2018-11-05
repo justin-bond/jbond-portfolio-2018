@@ -73,7 +73,7 @@ export default class project_detailed extends Component {
 	renderProjectLink() {
 		if (this.props.project.link) {
 			return (
-				<a href={this.props.project.link} target="_blank">Website Link</a>
+				<a href={this.props.project.link} target="_blank" className="link__underline">Website Link</a>
 			);
 		}
 	}
