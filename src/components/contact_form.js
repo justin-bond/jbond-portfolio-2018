@@ -114,7 +114,9 @@ export default class contact_form extends Component {
 							<input onChange={(e) => this.handleChange(e)} type="text" name="formMessage" id="message" required/>
 						</div>
 						<div className="contact--form__submit">
-							<input type="submit" className="btn--primary" value="Submit Message" />
+							<button type="submit" className="btn--primary">
+								Submit Message
+							</button>
 						</div>
 					</form>
 					{this.formResponse()}

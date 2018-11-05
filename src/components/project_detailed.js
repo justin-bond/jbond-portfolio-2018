@@ -34,8 +34,8 @@ export default class project_detailed extends Component {
 						<div className="video-banner position-relative">
 							<div className="js-video-content video-aspect">
 								<iframe src={`https://player.vimeo.com/video/${this.props.project.video}?autoplay=1&title=0&byline=0&portrait=0`} width="640" height="360" frameBorder="0" title="video" allowFullScreen></iframe>
-								<div className="video-banner__link button--outline__white js-video-close button--solid">
-									<a className="" onClick={this.hideVideo}>Exit Video</a>
+								<div className="video-banner__link btn--primary js-video-close" onClick={this.hideVideo}>
+									Exit Video
 		     					</div>
 		     				</div>
 						</div>
@@ -52,8 +52,8 @@ export default class project_detailed extends Component {
 										<div className="video-banner__title">
 											Website Overview
 										</div>
-										<div className="video-banner__link button--outline__white js-video-play">
-											<a className="" onClick={this.displayVideo}>Click to Play</a>
+										<div className="video-banner__link btn--primary js-video-play" onClick={this.displayVideo}>
+											Click to Play
 										</div>
 									</div>
 								</div>

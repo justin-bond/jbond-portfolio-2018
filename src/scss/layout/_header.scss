@@ -106,12 +106,15 @@ body {
 		}
 		a {
 			display: inline-block;
-			border-bottom: 2px solid transparent;
+			// border-bottom: 2px solid transparent;
 			transition: border-bottom .3s;
 			color: #fff;
 			line-height: 4em;
+			&:after {
+				height: 2px;
+			}
 			&:hover {
-				border-bottom: 2px solid #fff;
+				// border-bottom: 2px solid #fff;
 			}
 		}
 	}

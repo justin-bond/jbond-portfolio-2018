@@ -59,9 +59,9 @@ export default class header extends Component {
 					<div className="site-menu__wrapper">
 						<nav className="site-menu__navigation">
 							<ul>
-								<li><Link to="/" onClick={()=>this.scrollTo('top')}>Home</Link></li>
-								<li><Link to="/#work" onClick={()=>this.scrollTo('work')}>Work</Link></li>
-								<li><Link to="#contact" onClick={()=>this.scrollTo('contact')} >Contact</Link></li>
+								<li><Link to="/" onClick={()=>this.scrollTo('top')} className="link__underline">Home</Link></li>
+								<li><Link to="/#work" onClick={()=>this.scrollTo('work')} className="link__underline">Work</Link></li>
+								<li><Link to="#contact" onClick={()=>this.scrollTo('contact')} className="link__underline">Contact</Link></li>
 							</ul>
 						</nav>
 					</div>
