@@ -1,16 +1,20 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
+import { Tween } from 'react-gsap';
 
 export default class home_other_work extends Component {
 	constructor() {
 		super();
 		this.renderOtherWork = this.renderOtherWork.bind(this);
 	}
-	renderOtherWork(key) {
+	renderOtherWork(key, index) {
 		const work = this.props.projects[key];
 		if (work) {
 			return (
-				<li key={key}><Link to={`/project/${key}`} className="code-color-blue link__underline">{ work['companyName'] }</Link></li>
+				// eslint-disable-next-line
+				<Tween staggerFrom={{ opacity: 0, x: '200px', delay: 0.25 * index}} key={key}>
+				<li ><Link to={`/project/${key}`} className="code-color-blue link__underline">{ work['companyName'] }</Link></li>
+				</Tween>
 			)
 		}
 	}
