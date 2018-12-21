@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import {Helmet} from "react-helmet";
 import ContactForm from './contact_form';
 import { Link } from "react-router-dom";
+import { Tween } from 'react-gsap';
+import ScrollTrigger from 'react-scroll-trigger';
 
 export default class project_detailed extends Component {
 	constructor() {
@@ -9,8 +11,10 @@ export default class project_detailed extends Component {
 		this.renderSkills = this.renderSkills.bind(this);
 		this.displayVideo = this.displayVideo.bind(this);
 		this.hideVideo = this.hideVideo.bind(this);
+		this.onBulletsEnterViewport = this.onBulletsEnterViewport.bind(this);
 		this.state = {
-			videoVisible: false
+			videoVisible: false,
+			bulletsVisible: false
 		}
 	}
 	componentWillMount() {
@@ -25,6 +29,11 @@ export default class project_detailed extends Component {
 		this.setState({
 			'videoVisible': false
 		});
+	}
+	onBulletsEnterViewport() {
+		this.setState({
+	      bulletsVisible: true,
+	    });
 	}
 	renderHero() {
 		if (this.props.project.video) {
@@ -77,11 +86,19 @@ export default class project_detailed extends Component {
 			);
 		}
 	}
-	renderSkills(key) {
+	renderSkills(key, index) {
 		if (key) {
-			return (
-				<li className="" key={key}>{key}</li>
-			); 
+			if (this.state.bulletsVisible) {
+				return (
+					<Tween from={{ opacity: 0, x: '200px', delay: 0.25 * index}} key={key}>
+						<li className="">{key}</li>
+					</Tween>
+				); 
+			} else {
+				return (
+					<li className="" key={key}>{key}</li>
+				); 
+			}
 		}
 	}
 	renderAgencyTag() {
@@ -94,6 +111,9 @@ export default class project_detailed extends Component {
 	render() {
 		const { project } = this.props;
 		// console.log(project);
+		const {
+	      bulletsVisible,
+	    } = this.state;
 		return (
 			<div className="project-page container">
 				<Helmet>
@@ -113,9 +133,11 @@ export default class project_detailed extends Component {
 								{this.renderProjectLink()}
 							</div>
 
-							<div className="project__skills">
-								{project.skills.map(this.renderSkills)}
-							</div>
+							<ScrollTrigger onEnter={this.onBulletsEnterViewport}>
+								<div className={`project__skills ${bulletsVisible ? 'container-animate' : ''}`}>
+									{project.skills.map(this.renderSkills)}
+								</div>
+							</ScrollTrigger>
 
 							{this.renderAgencyTag()}
 

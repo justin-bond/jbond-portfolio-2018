@@ -1,11 +1,18 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import { animateScroll as scroll } from 'react-scroll';
+import { Tween } from 'react-gsap';
+import ScrollTrigger from 'react-scroll-trigger';
 
 export default class home_recent_work extends Component {
 	constructor() {
 		super();
 		this.renderRecentWork = this.renderRecentWork.bind(this);
+		this.onEnterViewport = this.onEnterViewport.bind(this);
+
+		this.state = {
+			visible: false
+		}
 	}
 	componentDidMount() {
 		const hash = this.props.props.location.hash.replace('#', '');
@@ -14,33 +21,60 @@ export default class home_recent_work extends Component {
 			scroll.scrollTo(anchorPosition.top + window.scrollY);
 		}
 	}
-	renderRecentWork(key) {
+	renderRecentWork(key, index) {
 		const work = this.props.projects[key];
-		var sectionStyle = {
+		const sectionStyle = {
 			backgroundImage: `url(${work['screenshot']}`
 		}
-		return (
-			<div className="home-recent__work" key={key}>
-				<Link to={`/project/${key}`}>
-					<div className="recent__work--loaded">
-						<img src={ work['logo'] } alt="company_logo" />
+		if (this.state.visible) {
+			return (
+				<Tween from={{ opacity: 0, delay: 0.5 * index}} key={key}>
+					<div className="home-recent__work">
+						<Link to={`/project/${key}`}>
+							<div className="recent__work--loaded">
+								<img src={ work['logo'] } alt="company_logo" />
+							</div>
+							<div className="recent__work--hover" style={ sectionStyle }>
+								{ work['companyName'] }
+							</div>
+						</Link>
 					</div>
-					<div className="recent__work--hover" style={ sectionStyle }>
-						{ work['companyName'] }
-					</div>
-				</Link>
-			</div>
-		)
+				</Tween>
+			)
+		} else {
+			return (
+				<div className="home-recent__work" key={key}>
+					<Link to={`/project/${key}`}>
+						<div className="recent__work--loaded">
+							<img src={ work['logo'] } alt="company_logo" />
+						</div>
+						<div className="recent__work--hover" style={ sectionStyle }>
+							{ work['companyName'] }
+						</div>
+					</Link>
+				</div>
+			)
+		}
+	}
+	onEnterViewport() {
+		this.setState({
+	      visible: true,
+	    });
 	}
 	render() {
+		const {
+	      visible,
+	    } = this.state;
 		return (
 			<div className="home-recent" id="work">
 				<h1 className="home-recent__text">
 					Recent Work
 				</h1>
-				<div className="home-recent__top">
-					{this.props.recentWork.map(this.renderRecentWork)}
-				</div>
+				<ScrollTrigger onEnter={this.onEnterViewport}>
+					<div className={`home-recent__top ${visible ? 'container-animate' : ''}`}>
+						{this.props.recentWork.map(this.renderRecentWork)}
+					</div>
+				</ScrollTrigger>
 			</div>
 		);
 	}

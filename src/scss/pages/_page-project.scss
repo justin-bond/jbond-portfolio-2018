@@ -81,6 +81,10 @@
 		}
 	}
 	.project__skills {
+		opacity: 0;
+		&.container-animate {
+			opacity: 1;
+		}
 		li {
 			list-style-type: none;
 			margin-bottom: 22px;
